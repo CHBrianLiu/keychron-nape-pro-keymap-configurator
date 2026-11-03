@@ -1,6 +1,6 @@
 # Nape Pro configuration inventory and priorities
 
-Research date: **2026-11-02**. Status: **source-backed inventory; milestone priorities approved; first milestone implemented**.
+Research date: **2026-11-02**. Status: **source-backed inventory; P0 and P1 implemented; P1 hardware verification pending**.
 
 ## Summary
 
@@ -370,6 +370,14 @@ Sources: [K, P, M]. These are concrete fidelity considerations for the requested
 - Companion-backed app/URL actions need their own optional integration or metadata backup. Firmware flashing, pairing management, diagnostics and UI cosmetics are lower priority than the user's text/backup workflow.
 
 ## Implementation status
+
+P1's detailed design is confirmed and implemented. Source v2 adds top-level
+readable/raw combinations, including the user's `03+04` gateway return, and an
+optional separately generated macro bundle. The earlier source-v1 choices below
+describe P0 history; current syntax and limitations are documented in
+[README](../../README.md) and [P1 design](../design/p1.md). The user reports
+successful P0 testing; combination raw-layer-0 scope and macro submission still
+need hardware verification.
 
 The user confirmed the consolidated first-milestone design. Implemented in Node.js/JavaScript with npm scripts, a checked-in JSON Schema, an offline pinned ZMK catalog, and one-time sample migration to `keymap.yaml`. See [README](../../README.md) for source syntax, supported mappings, static-versus-semantic validation, and development commands.
 

@@ -1,11 +1,11 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Nape Pro keymap source v1",
+  "title": "Nape Pro keymap source v2",
   "description": "Eight complete visible layers plus preserved Launcher data. See README.md for semantic build checks.",
   "type": "object",
   "properties": {
     "version": {
-      "const": 1
+      "const": 2
     },
     "device": {
       "const": "nape-pro"
@@ -17,6 +17,195 @@
       },
       "minItems": 8,
       "maxItems": 8
+    },
+    "combinations": {
+      "type": "array",
+      "maxItems": 30,
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "index": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 29
+              },
+              "timeout": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 65535
+              },
+              "buttons": {
+                "type": "array",
+                "items": {
+                  "enum": [
+                    "03",
+                    "04",
+                    "01",
+                    "02",
+                    "m1",
+                    "m2"
+                  ]
+                },
+                "minItems": 2,
+                "maxItems": 4,
+                "uniqueItems": true
+              },
+              "layer": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 7
+              },
+              "raw_layer": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 255
+              },
+              "tap": {
+                "$ref": "#/$defs/action"
+              },
+              "hold": {
+                "$ref": "#/$defs/action"
+              },
+              "name": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "index",
+              "timeout",
+              "buttons",
+              "tap",
+              "hold"
+            ],
+            "additionalProperties": false,
+            "oneOf": [
+              {
+                "required": [
+                  "layer"
+                ]
+              },
+              {
+                "required": [
+                  "raw_layer"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "raw": {
+                "type": "object",
+                "properties": {
+                  "index": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 29
+                  },
+                  "timeout": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 65535
+                  },
+                  "layer": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 255
+                  },
+                  "cols": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 255
+                  },
+                  "tap": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 65535
+                  },
+                  "held": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 65535
+                  }
+                },
+                "required": [
+                  "index",
+                  "timeout",
+                  "layer",
+                  "cols",
+                  "tap",
+                  "held"
+                ],
+                "additionalProperties": true
+              }
+            },
+            "required": [
+              "raw"
+            ],
+            "additionalProperties": false
+          }
+        ]
+      }
+    },
+    "external_macros": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 15
+      },
+      "uniqueItems": true,
+      "maxItems": 16
+    },
+    "macros": {
+      "type": "object",
+      "properties": {
+        "slot_count": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 256
+        },
+        "capacity_bytes": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 65535
+        },
+        "slots": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "index": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 255
+              },
+              "name": {
+                "type": "string"
+              },
+              "events": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/macroEvent"
+                }
+              }
+            },
+            "required": [
+              "index",
+              "events"
+            ],
+            "additionalProperties": false
+          },
+          "maxItems": 256
+        }
+      },
+      "required": [
+        "slot_count",
+        "slots"
+      ],
+      "additionalProperties": false
     },
     "preserved": {
       "type": "object",
@@ -102,54 +291,6 @@
           "minItems": 8,
           "maxItems": 8
         },
-        "combinations": {
-          "type": "array",
-          "maxItems": 30,
-          "items": {
-            "type": "object",
-            "properties": {
-              "index": {
-                "type": "integer",
-                "minimum": 0,
-                "maximum": 29
-              },
-              "timeout": {
-                "type": "integer",
-                "minimum": 0,
-                "maximum": 65535
-              },
-              "layer": {
-                "type": "integer",
-                "minimum": 0,
-                "maximum": 255
-              },
-              "cols": {
-                "type": "integer",
-                "minimum": 1,
-                "maximum": 255
-              },
-              "tap": {
-                "type": "integer",
-                "minimum": 0,
-                "maximum": 65535
-              },
-              "held": {
-                "type": "integer",
-                "minimum": 0,
-                "maximum": 65535
-              }
-            },
-            "required": [
-              "index",
-              "timeout",
-              "layer",
-              "cols",
-              "tap",
-              "held"
-            ],
-            "additionalProperties": true
-          }
-        },
         "combination_names": {
           "type": "object",
           "additionalProperties": {
@@ -160,7 +301,6 @@
       "required": [
         "raw_layer_0",
         "column_6",
-        "combinations",
         "combination_names"
       ],
       "additionalProperties": false
@@ -170,10 +310,93 @@
     "version",
     "device",
     "layers",
+    "combinations",
     "preserved"
   ],
   "additionalProperties": false,
   "$defs": {
+    "macroEvent": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "tap": {
+              "$ref": "#/$defs/symbol"
+            }
+          },
+          "required": [
+            "tap"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "down": {
+              "$ref": "#/$defs/symbol"
+            }
+          },
+          "required": [
+            "down"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "up": {
+              "$ref": "#/$defs/symbol"
+            }
+          },
+          "required": [
+            "up"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "delay_ms": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9999
+            }
+          },
+          "required": [
+            "delay_ms"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[\\x20-\\x7E\\t\\n\\r]*$"
+            }
+          },
+          "required": [
+            "text"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "raw": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 3
+            }
+          },
+          "required": [
+            "raw"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
     "symbol": {
       "type": "string",
       "maxLength": 256,

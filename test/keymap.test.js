@@ -59,6 +59,7 @@ test('structured layer, macro, special and empty actions target the correct nume
     '02': { macro: 15 }, m1: 'none', m2: 'trans',
   };
   source.layers[7].encoder = { clockwise: { nape: 'left_click_lock' }, counterclockwise: { nape: 'gesture_mode' } };
+  source.external_macros = [15];
   const output = buildKeymap(source);
   assert.deepEqual(output.keymap[8].map(({ val }) => val), [21025, 21096, 20993, 30479, 0, 1, 21035]);
   assert.deepEqual(output.knob[8], { cw: 32304, ccw: 21033 });
@@ -77,13 +78,13 @@ test('unknown raw words survive in visible bindings, hidden layer, and every ext
 
 test('sparse combination slots, raw layer values, timeout zero, names, and unknown fields are preserved', () => {
   const source = fixture();
-  source.preserved.combinations = [
-    { index: 4, timeout: 0, layer: 0, cols: 5, tap: 4, held: 65535, extra: { revision: 9 } },
-    { index: 29, timeout: 65535, layer: 8, cols: 48, tap: 212, held: 21026 },
+  source.combinations = [
+    { raw: { index: 4, timeout: 0, layer: 0, cols: 5, tap: 4, held: 65535, extra: { revision: 9 } } },
+    { raw: { index: 29, timeout: 65535, layer: 8, cols: 48, tap: 212, held: 21026 } },
   ];
   source.preserved.combination_names = { '0103': 'Example', m1m2: 'Pair' };
   const output = buildKeymap(source);
-  assert.deepEqual(output.simult, source.preserved.combinations);
+  assert.deepEqual(output.simult, source.combinations.map(({ raw }) => raw));
   assert.deepEqual(output.simultNames, source.preserved.combination_names);
   assert.notEqual(output.MD5, expected.MD5);
 });
@@ -134,7 +135,7 @@ test('schema rejects incomplete snapshots, unknown fields, bad ranges and nested
     (s) => { s.layers[0].buttons.m2 = { raw: 1, mo: 0 }; },
     (s) => { s.layers[0].buttons.m2 = { tap: { tap: 'A', hold: 'B' }, hold: 'C' }; },
     (s) => { s.layers[0].encoder.clockwise = { tap: 'A', hold: 'B' }; },
-    (s) => delete s.preserved.combinations,
+    (s) => delete s.combinations,
     (s) => s.preserved.column_6.pop(),
   ];
   for (const mutate of mutations) {
@@ -147,9 +148,9 @@ test('schema rejects incomplete snapshots, unknown fields, bad ranges and nested
 test('duplicate raw slot identities and incomplete tap/hold markers fail semantic validation', () => {
   const source = fixture();
   const record = { index: 3, layer: 0, cols: 3, timeout: 200, tap: 4, held: 5 };
-  source.preserved.combinations = [record, { ...record }];
+  source.combinations = [{ raw: record }, { raw: { ...record } }];
   assert.throws(() => buildKeymap(source), /duplicate index 3/);
-  source.preserved.combinations = [];
+  source.combinations = [];
   source.preserved.raw_layer_0.keymap[0] = 32297;
   assert.throws(() => buildKeymap(source), /no action record/);
   const visible = fixture();

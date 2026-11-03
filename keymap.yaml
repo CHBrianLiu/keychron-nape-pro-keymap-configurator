@@ -1,6 +1,6 @@
 # Authoritative keymap. Edit this file, then npm run validate && npm run build.
 # Layer position is the visible Launcher layer number; names are not exported.
-version: 1
+version: 2
 device: nape-pro
 
 layers:
@@ -120,6 +120,16 @@ layers:
       clockwise: C_VOLUME_UP
       counterclockwise: C_VOLUME_DOWN
 
+combinations:
+  # Intended as an all-layer return; raw layer 0 scope needs a device test.
+  - index: 0
+    buttons: ["03", "04"]
+    raw_layer: 0
+    timeout: 200
+    tap: { to: 0 }
+    hold: none
+    name: Gateway
+
 # Numeric Launcher data from the original export; not ZMK encoded integers.
 preserved:
   raw_layer_0:
@@ -130,5 +140,4 @@ preserved:
     tap_hold: []
   # One unmapped column-6 value for each visible layer, in the same order.
   column_6: [21035, 21035, 21035, 21035, 21035, 21035, 21035, 21035]
-  combinations: []
   combination_names: {}

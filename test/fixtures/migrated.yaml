@@ -1,5 +1,5 @@
 # Fixed migration fixture; independent of the user's editable keymap.yaml.
-version: 1
+version: 2
 device: nape-pro
 layers:
   - buttons:
@@ -48,11 +48,12 @@ layers:
     encoder: { clockwise: C_VOLUME_UP, counterclockwise: C_VOLUME_DOWN }
   - buttons: { "01": MB4, "02": { nape: dpi_cycle }, "03": { nape: scroll_mode }, "04": { nape: orientation_cycle }, m1: LCLK, m2: RCLK }
     encoder: { clockwise: C_VOLUME_UP, counterclockwise: C_VOLUME_DOWN }
+combinations: []
+
 preserved:
   raw_layer_0:
     keymap: [21034, 0, 212, 0, 209, 210, 21035]
     encoder: { clockwise: 169, counterclockwise: 170 }
     tap_hold: []
   column_6: [21035, 21035, 21035, 21035, 21035, 21035, 21035, 21035]
-  combinations: []
   combination_names: {}
