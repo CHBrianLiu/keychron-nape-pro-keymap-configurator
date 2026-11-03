@@ -5,20 +5,26 @@ device: nape-pro
 
 layers:
   # Visible layer 0 (raw layer 1)
+  # horizontal placement beneath the keyboard
+  # Angle: 90
   - buttons:
-      "01": { nape: scroll_mode }
-      "02": LCLK
-      "03":
-        tap: LG(C)
-        hold: LG(V)
-      "04": { nape: gesture_mode }
-      m1:
+      "01":
+        tap: none # Input-method switching is deferred.
+        hold: LEFT_GUI
+      "02":
         tap: MB4
-        hold: { mo: 1 }
+        hold: { nape: gesture_mode }
+      "03":
+        tap: none # Input-method switching is deferred.
+        hold: { mo: 2 }
+      "04":
+        tap: MB5
+        hold: { nape: scroll_mode }
+      m1: LCLK
       m2: RCLK
     encoder:
-      clockwise: LG(KP_PLUS)
-      counterclockwise: LG(KP_MINUS)
+      clockwise: { nape: wheel_down }
+      counterclockwise: { nape: wheel_up }
 
   # Visible layer 1 (raw layer 2)
   - buttons:
