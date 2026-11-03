@@ -4,6 +4,7 @@ Research date: **2026-11-02**. Status: **source-backed inventory; P0 and P1 impl
 
 ## Summary
 
+- The ultimate goal is a **standalone tool that configures Nape Pro keymaps directly**, without Keychron Launcher, starting on macOS. Text-based configuration and reliable backup remain central. Direct device access is planned, not implemented; standalone executable packaging is a separate, deferred decision.
 - The first deliverable is an **offline YAML-to-Launcher-JSON generator**. The human-maintained keymap source in Git is authoritative; Launcher applies generated import files. Tap/hold, both encoder directions, combinations, hidden raw data, and unknown keycodes must remain faithfully represented from day one.
 - Launcher’s version-2 keymap export is **not a whole-device backup**. It contains key assignments, encoder assignments, active tap/hold records, combinations, and combination names. It omits macro bodies, gesture actions, orientation, DPI, polling, sleep, and most browser metadata. [K, P]
 - The remaining device configuration exposed by the inspected Nape routes is: orientation; DPI slot count, values and selection; custom DPI; polling rate; four gesture actions; forced gesture/scroll modes; sleep; and macro sequences. Quick Start additionally depends on Launcher Assistant. [D, A, M, Q, P]
@@ -360,7 +361,7 @@ Sources: [K, P, M]. These are concrete fidelity considerations for the requested
 ### P2 — Native device access and broader settings
 
 - Add per-layer orientation plus global/current orientation; all five DPI values, enabled count, active slot, custom DPI; both polling fields/capabilities; four raw gesture actions; forced mode flags; sleep.
-- Add native macOS reads/writes to capture and apply settings outside Launcher's keymap and macro exports. Keep runtime status separate from restorable configuration.
+- Add native macOS keymap reads and writes so the tool can capture and apply keymaps directly without Launcher. Also capture and apply settings outside Launcher's keymap and macro exports. Keep runtime status separate from restorable configuration.
 - Resolve firmware support, global-versus-layer semantics and restore ordering. Full-device completeness requires additional reads beyond either Launcher JSON file, so a schema alone does not provide a full backup.
 - User can move a specific high-value setting (for example orientation/DPI/gesture) ahead of the broader phase after seeing this inventory.
 
@@ -380,17 +381,17 @@ tap/hold, combinations, and checksum relative to generation. Combination names
 are exportable; their successful UI display after import remains unreliable in
 this observed workflow, with the cause unresolved. Name support is retained.
 Names are excluded from the keymap checksum, so a matching checksum alone is
-not evidence of name fidelity. See the [README pitfall](../../README.md#combinations).
+not evidence of name fidelity. See the [combination guide](../keymap-guide.md#combinations).
 
 P1's detailed design is confirmed and implemented. Source v2 adds top-level
 readable/raw combinations, including the user's `03+04` gateway return, and an
 optional separately generated macro bundle. The earlier source-v1 choices below
 describe P0 history; current syntax and limitations are documented in
-[README](../../README.md) and [P1 design](../design/p1.md). The user reports
+[keymap guide](../keymap-guide.md) and [P1 design](../design/p1.md). The user reports
 successful P0 testing; combination raw-layer-0 scope and macro submission still
 need hardware verification.
 
-The user confirmed the consolidated first-milestone design. Implemented in Node.js/JavaScript with npm scripts, a checked-in JSON Schema, an offline pinned ZMK catalog, and one-time sample migration to `keymap.yaml`. See [README](../../README.md) for source syntax, supported mappings, static-versus-semantic validation, and development commands.
+The user confirmed the consolidated first-milestone design. Implemented in Node.js/JavaScript with npm scripts, a checked-in JSON Schema, an offline pinned ZMK catalog, and one-time sample migration to `keymap.yaml`. See the [keymap guide](../keymap-guide.md) for source syntax, supported mappings, static-versus-semantic validation, and development commands.
 
 The initial build reproduces the original sample's complete exported document and checksum. Automated fixtures remain independent of the user's editable source so subsequent intentional keymap changes do not invalidate migration tests. Broader device settings and native transport remain later milestones.
 
