@@ -141,6 +141,16 @@ Indexes are neither allocated nor reordered. Duplicate indexes and duplicate
 member sets are errors across **all** records, even on different layers or with
 different button order/names.
 
+**Launcher name-display pitfall (observed 2026-11-03):** importing the generated
+gateway combination created the combination, but its UI label was blank despite
+`simultNames: {"0304": "Gateway"}` in the import file. Renaming it in Launcher
+and exporting produced `simultNames: {"0304": "gateway"}`; keymap payload and
+checksum still matched the generated file. Names are therefore exportable, but
+their presence in JSON does not guarantee the UI displays them after import.
+The import/display cause remains unresolved. Keep the source `name`; if needed,
+rename the combination in Launcher for display. Do not infer name preservation
+from checksum equality: names are excluded from the keymap checksum.
+
 The initial `03+04` combination is intended to return to visible layer 0 on tap,
 with no held action, from every layer. Raw layer 0 matches Launcher's observed
 creation path, but **its scope is unverified**: test the combination from all

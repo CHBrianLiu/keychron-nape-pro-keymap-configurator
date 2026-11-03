@@ -371,6 +371,17 @@ Sources: [K, P, M]. These are concrete fidelity considerations for the requested
 
 ## Implementation status
 
+**2026-11-03 runtime follow-up:** the generated gateway combination appeared in
+Launcher after import, but its display name was blank despite
+`simultNames: {"0304": "Gateway"}` in the generated file. The user renamed it
+in the UI and supplied `TrackballKeymap-Nape Pro-2026-11-03.json`; inspection
+confirmed `simultNames: {"0304": "gateway"}` and unchanged keymap, knob,
+tap/hold, combinations, and checksum relative to generation. Combination names
+are exportable; their successful UI display after import remains unreliable in
+this observed workflow, with the cause unresolved. Name support is retained.
+Names are excluded from the keymap checksum, so a matching checksum alone is
+not evidence of name fidelity. See the [README pitfall](../../README.md#combinations).
+
 P1's detailed design is confirmed and implemented. Source v2 adds top-level
 readable/raw combinations, including the user's `03+04` gateway return, and an
 optional separately generated macro bundle. The earlier source-v1 choices below
