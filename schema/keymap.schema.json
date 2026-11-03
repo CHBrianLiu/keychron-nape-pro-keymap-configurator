@@ -1,0 +1,856 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Nape Pro keymap source v1",
+  "description": "Eight complete visible layers plus preserved Launcher data. See README.md for semantic build checks.",
+  "type": "object",
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "device": {
+      "const": "nape-pro"
+    },
+    "layers": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/layer"
+      },
+      "minItems": 8,
+      "maxItems": 8
+    },
+    "preserved": {
+      "type": "object",
+      "properties": {
+        "raw_layer_0": {
+          "type": "object",
+          "properties": {
+            "keymap": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 65535
+              },
+              "minItems": 7,
+              "maxItems": 7
+            },
+            "encoder": {
+              "type": "object",
+              "properties": {
+                "clockwise": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 65535
+                },
+                "counterclockwise": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 65535
+                }
+              },
+              "required": [
+                "clockwise",
+                "counterclockwise"
+              ],
+              "additionalProperties": false
+            },
+            "tap_hold": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "col": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 6
+                  },
+                  "tap": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 65535
+                  },
+                  "held": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 65535
+                  }
+                },
+                "required": [
+                  "col",
+                  "tap",
+                  "held"
+                ],
+                "additionalProperties": true
+              },
+              "maxItems": 7
+            }
+          },
+          "required": [
+            "keymap",
+            "encoder",
+            "tap_hold"
+          ],
+          "additionalProperties": false
+        },
+        "column_6": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 65535
+          },
+          "minItems": 8,
+          "maxItems": 8
+        },
+        "combinations": {
+          "type": "array",
+          "maxItems": 30,
+          "items": {
+            "type": "object",
+            "properties": {
+              "index": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 29
+              },
+              "timeout": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 65535
+              },
+              "layer": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 255
+              },
+              "cols": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 255
+              },
+              "tap": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 65535
+              },
+              "held": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 65535
+              }
+            },
+            "required": [
+              "index",
+              "timeout",
+              "layer",
+              "cols",
+              "tap",
+              "held"
+            ],
+            "additionalProperties": true
+          }
+        },
+        "combination_names": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "raw_layer_0",
+        "column_6",
+        "combinations",
+        "combination_names"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "version",
+    "device",
+    "layers",
+    "preserved"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "symbol": {
+      "type": "string",
+      "maxLength": 256,
+      "anyOf": [
+        {
+          "enum": [
+            "A",
+            "ALT_ERASE",
+            "AMPERSAND",
+            "AMPS",
+            "APOS",
+            "APOSTROPHE",
+            "ASTERISK",
+            "ASTRK",
+            "AT",
+            "ATSN",
+            "ATTENTION",
+            "AT_SIGN",
+            "B",
+            "BACKSLASH",
+            "BACKSPACE",
+            "BANG",
+            "BKSP",
+            "BSLH",
+            "BSPC",
+            "C",
+            "CAPS",
+            "CAPSLOCK",
+            "CARET",
+            "CLCK",
+            "CLEAR",
+            "CLEAR2",
+            "CLEAR_AGAIN",
+            "CMMA",
+            "COLN",
+            "COLON",
+            "COMMA",
+            "COPY",
+            "CRRT",
+            "CRSEL",
+            "CUT",
+            "C_AC_BACK",
+            "C_AC_BOOKMARKS",
+            "C_AC_DESKTOP_SHOW_ALL_WINDOWS",
+            "C_AC_FAVORITES",
+            "C_AC_FAVOURITES",
+            "C_AC_FORWARD",
+            "C_AC_HOME",
+            "C_AC_REFRESH",
+            "C_AC_SEARCH",
+            "C_AC_STOP",
+            "C_AL_CALC",
+            "C_AL_CALCULATOR",
+            "C_AL_CCC",
+            "C_AL_EMAIL",
+            "C_AL_MAIL",
+            "C_AL_MY_COMPUTER",
+            "C_BRIGHTNESS_DEC",
+            "C_BRIGHTNESS_INC",
+            "C_BRI_DEC",
+            "C_BRI_DN",
+            "C_BRI_INC",
+            "C_BRI_UP",
+            "C_FAST_FORWARD",
+            "C_FF",
+            "C_MUTE",
+            "C_NEXT",
+            "C_PLAY_PAUSE",
+            "C_PP",
+            "C_PREV",
+            "C_PREVIOUS",
+            "C_REWIND",
+            "C_RW",
+            "C_STOP",
+            "C_STOP_EJECT",
+            "C_VOLUME_DOWN",
+            "C_VOLUME_UP",
+            "C_VOL_DN",
+            "C_VOL_UP",
+            "D",
+            "DARW",
+            "DEL",
+            "DELETE",
+            "DLLR",
+            "DOLLAR",
+            "DOT",
+            "DOUBLE_QUOTES",
+            "DOWN",
+            "DOWN_ARROW",
+            "DQT",
+            "E",
+            "END",
+            "ENTER",
+            "EQL",
+            "EQUAL",
+            "ESC",
+            "ESCAPE",
+            "EXCL",
+            "EXCLAMATION",
+            "EXSEL",
+            "F",
+            "F1",
+            "F10",
+            "F11",
+            "F12",
+            "F13",
+            "F14",
+            "F15",
+            "F16",
+            "F17",
+            "F18",
+            "F19",
+            "F2",
+            "F20",
+            "F21",
+            "F22",
+            "F23",
+            "F24",
+            "F3",
+            "F4",
+            "F5",
+            "F6",
+            "F7",
+            "F8",
+            "F9",
+            "FSLH",
+            "G",
+            "GRAV",
+            "GRAVE",
+            "GREATER_THAN",
+            "GT",
+            "GUI",
+            "H",
+            "HASH",
+            "HOME",
+            "I",
+            "INS",
+            "INSERT",
+            "INT1",
+            "INT2",
+            "INT3",
+            "INT4",
+            "INT5",
+            "INT6",
+            "INT7",
+            "INT8",
+            "INT9",
+            "INTERNATIONAL_1",
+            "INTERNATIONAL_2",
+            "INTERNATIONAL_3",
+            "INTERNATIONAL_4",
+            "INTERNATIONAL_5",
+            "INTERNATIONAL_6",
+            "INTERNATIONAL_7",
+            "INTERNATIONAL_8",
+            "INTERNATIONAL_9",
+            "INT_HENKAN",
+            "INT_KANA",
+            "INT_KATAKANAHIRAGANA",
+            "INT_KPJPCOMMA",
+            "INT_MUHENKAN",
+            "INT_RO",
+            "INT_YEN",
+            "J",
+            "K",
+            "KDIV",
+            "KMIN",
+            "KMLT",
+            "KPLS",
+            "KP_ASTERISK",
+            "KP_COMMA",
+            "KP_DIVIDE",
+            "KP_DOT",
+            "KP_ENTER",
+            "KP_EQUAL",
+            "KP_EQUAL_AS400",
+            "KP_MINUS",
+            "KP_MULTIPLY",
+            "KP_N0",
+            "KP_N1",
+            "KP_N2",
+            "KP_N3",
+            "KP_N4",
+            "KP_N5",
+            "KP_N6",
+            "KP_N7",
+            "KP_N8",
+            "KP_N9",
+            "KP_NLCK",
+            "KP_NUM",
+            "KP_NUMBER_0",
+            "KP_NUMBER_1",
+            "KP_NUMBER_2",
+            "KP_NUMBER_3",
+            "KP_NUMBER_4",
+            "KP_NUMBER_5",
+            "KP_NUMBER_6",
+            "KP_NUMBER_7",
+            "KP_NUMBER_8",
+            "KP_NUMBER_9",
+            "KP_NUMLOCK",
+            "KP_PLUS",
+            "KP_SLASH",
+            "KP_SUBTRACT",
+            "K_AGAIN",
+            "K_APP",
+            "K_APPLICATION",
+            "K_CANCEL",
+            "K_CMENU",
+            "K_CONTEXT_MENU",
+            "K_COPY",
+            "K_CUT",
+            "K_EXEC",
+            "K_EXECUTE",
+            "K_FIND",
+            "K_HELP",
+            "K_MENU",
+            "K_MUTE",
+            "K_PASTE",
+            "K_POWER",
+            "K_PWR",
+            "K_REDO",
+            "K_SELECT",
+            "K_STOP",
+            "K_UNDO",
+            "K_VOLUME_DOWN",
+            "K_VOLUME_UP",
+            "K_VOL_DN",
+            "K_VOL_UP",
+            "L",
+            "LABT",
+            "LALT",
+            "LANG1",
+            "LANG2",
+            "LANG3",
+            "LANG4",
+            "LANG5",
+            "LANG6",
+            "LANG7",
+            "LANG8",
+            "LANG9",
+            "LANGUAGE_1",
+            "LANGUAGE_2",
+            "LANGUAGE_3",
+            "LANGUAGE_4",
+            "LANGUAGE_5",
+            "LANGUAGE_6",
+            "LANGUAGE_7",
+            "LANGUAGE_8",
+            "LANGUAGE_9",
+            "LANG_HANGEUL",
+            "LANG_HANJA",
+            "LANG_HIRAGANA",
+            "LANG_KATAKANA",
+            "LANG_ZENKAKUHANKAKU",
+            "LARW",
+            "LBKT",
+            "LBRC",
+            "LCAPS",
+            "LCLK",
+            "LCMD",
+            "LCTL",
+            "LCTRL",
+            "LCUR",
+            "LEFT",
+            "LEFT_ALT",
+            "LEFT_ARROW",
+            "LEFT_BRACE",
+            "LEFT_BRACKET",
+            "LEFT_COMMAND",
+            "LEFT_CONTROL",
+            "LEFT_GUI",
+            "LEFT_META",
+            "LEFT_PARENTHESIS",
+            "LEFT_SHIFT",
+            "LEFT_WIN",
+            "LESS_THAN",
+            "LGUI",
+            "LMETA",
+            "LNLCK",
+            "LOCKING_CAPS",
+            "LOCKING_NUM",
+            "LOCKING_SCROLL",
+            "LPAR",
+            "LPRN",
+            "LSFT",
+            "LSHFT",
+            "LSHIFT",
+            "LSLCK",
+            "LT",
+            "LWIN",
+            "M",
+            "MB1",
+            "MB2",
+            "MB3",
+            "MB4",
+            "MB5",
+            "MCLK",
+            "MINUS",
+            "M_MUTE",
+            "M_NEXT",
+            "M_PLAY",
+            "M_PREV",
+            "M_STOP",
+            "M_VOLD",
+            "M_VOLU",
+            "N",
+            "N0",
+            "N1",
+            "N2",
+            "N3",
+            "N4",
+            "N5",
+            "N6",
+            "N7",
+            "N8",
+            "N9",
+            "NON_US_BACKSLASH",
+            "NON_US_BSLH",
+            "NON_US_HASH",
+            "NUBS",
+            "NUHS",
+            "NUMBER_0",
+            "NUMBER_1",
+            "NUMBER_2",
+            "NUMBER_3",
+            "NUMBER_4",
+            "NUMBER_5",
+            "NUMBER_6",
+            "NUMBER_7",
+            "NUMBER_8",
+            "NUMBER_9",
+            "NUM_0",
+            "NUM_1",
+            "NUM_2",
+            "NUM_3",
+            "NUM_4",
+            "NUM_5",
+            "NUM_6",
+            "NUM_7",
+            "NUM_8",
+            "NUM_9",
+            "O",
+            "OPER",
+            "OUT",
+            "P",
+            "PAGE_DOWN",
+            "PAGE_UP",
+            "PAUS",
+            "PAUSE_BREAK",
+            "PERCENT",
+            "PERIOD",
+            "PGDN",
+            "PGUP",
+            "PG_DN",
+            "PG_UP",
+            "PIPE",
+            "PIPE2",
+            "PLUS",
+            "POUND",
+            "PRCNT",
+            "PRCT",
+            "PRINTSCREEN",
+            "PRIOR",
+            "PRSC",
+            "PSCRN",
+            "PSTE",
+            "Q",
+            "QMARK",
+            "QUESTION",
+            "QUOT",
+            "R",
+            "RABT",
+            "RALT",
+            "RARW",
+            "RBKT",
+            "RBRC",
+            "RCLK",
+            "RCMD",
+            "RCTL",
+            "RCTRL",
+            "RCUR",
+            "RET",
+            "RET2",
+            "RETURN",
+            "RETURN2",
+            "RGUI",
+            "RIGHT",
+            "RIGHT_ALT",
+            "RIGHT_ARROW",
+            "RIGHT_BRACE",
+            "RIGHT_BRACKET",
+            "RIGHT_COMMAND",
+            "RIGHT_CONTROL",
+            "RIGHT_GUI",
+            "RIGHT_META",
+            "RIGHT_PARENTHESIS",
+            "RIGHT_SHIFT",
+            "RIGHT_WIN",
+            "RMETA",
+            "RPAR",
+            "RPRN",
+            "RSFT",
+            "RSHFT",
+            "RSHIFT",
+            "RWIN",
+            "S",
+            "SCLK",
+            "SCLN",
+            "SCROLLLOCK",
+            "SEMI",
+            "SEMICOLON",
+            "SEPARATOR",
+            "SINGLE_QUOTE",
+            "SLASH",
+            "SLCK",
+            "SPACE",
+            "SPC",
+            "SQT",
+            "STAR",
+            "SYSREQ",
+            "SYSTEM_POWER",
+            "SYSTEM_SLEEP",
+            "SYSTEM_WAKE_UP",
+            "SYS_PWR",
+            "SYS_SLEEP",
+            "SYS_WAKE",
+            "T",
+            "TAB",
+            "TILD",
+            "TILDE",
+            "TILDE2",
+            "U",
+            "UARW",
+            "UNDER",
+            "UNDERSCORE",
+            "UNDO",
+            "UP",
+            "UP_ARROW",
+            "V",
+            "VOLD",
+            "VOLU",
+            "W",
+            "X",
+            "Y",
+            "Z",
+            "none",
+            "trans"
+          ]
+        },
+        {
+          "description": "ZMK modifier expressions. Build checks balanced nesting, key support, and modifier compatibility.",
+          "pattern": "^(?:(?:LC|LS|LA|LG|RC|RS|RA|RG)\\(\\s*)+[A-Z][A-Z0-9_]*(?:\\s*\\))+$"
+        }
+      ]
+    },
+    "action": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/symbol"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "mo": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 7
+            }
+          },
+          "required": [
+            "mo"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "tog": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 7
+            }
+          },
+          "required": [
+            "tog"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "to": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 7
+            }
+          },
+          "required": [
+            "to"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "macro": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 15
+            }
+          },
+          "required": [
+            "macro"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "nape": {
+              "enum": [
+                "application_preferences",
+                "battery",
+                "bluetooth_1",
+                "bluetooth_2",
+                "bluetooth_3",
+                "bluetooth_select_clear",
+                "bootloader",
+                "cortana",
+                "custom_dpi",
+                "double_left_click",
+                "dpi_cycle",
+                "dpi_decrease",
+                "dpi_increase",
+                "gesture_mode",
+                "left_click_lock",
+                "left_command",
+                "left_option",
+                "macos_desktop_left",
+                "macos_desktop_right",
+                "macos_emoji",
+                "macos_lock",
+                "macos_screenshot",
+                "orientation_0",
+                "orientation_135",
+                "orientation_180",
+                "orientation_225",
+                "orientation_270",
+                "orientation_315",
+                "orientation_45",
+                "orientation_90",
+                "orientation_cycle",
+                "orientation_decrease",
+                "orientation_increase",
+                "pair_2_4ghz",
+                "polling_cycle",
+                "right_command",
+                "right_option",
+                "scroll_mode",
+                "siri",
+                "wheel_down",
+                "wheel_left",
+                "wheel_right",
+                "wheel_up",
+                "windows_desktop_left",
+                "windows_desktop_right",
+                "windows_emoji",
+                "windows_explorer",
+                "windows_lock",
+                "windows_screenshot",
+                "windows_settings",
+                "windows_task_view"
+              ]
+            }
+          },
+          "required": [
+            "nape"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "raw": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 65535
+            }
+          },
+          "required": [
+            "raw"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "binding": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/action"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "tap": {
+              "$ref": "#/$defs/action"
+            },
+            "hold": {
+              "$ref": "#/$defs/action"
+            }
+          },
+          "required": [
+            "tap",
+            "hold"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "layer": {
+      "type": "object",
+      "properties": {
+        "buttons": {
+          "type": "object",
+          "properties": {
+            "01": {
+              "$ref": "#/$defs/binding"
+            },
+            "02": {
+              "$ref": "#/$defs/binding"
+            },
+            "03": {
+              "$ref": "#/$defs/binding"
+            },
+            "04": {
+              "$ref": "#/$defs/binding"
+            },
+            "m1": {
+              "$ref": "#/$defs/binding"
+            },
+            "m2": {
+              "$ref": "#/$defs/binding"
+            }
+          },
+          "required": [
+            "01",
+            "02",
+            "03",
+            "04",
+            "m1",
+            "m2"
+          ],
+          "additionalProperties": false
+        },
+        "encoder": {
+          "type": "object",
+          "properties": {
+            "clockwise": {
+              "$ref": "#/$defs/action"
+            },
+            "counterclockwise": {
+              "$ref": "#/$defs/action"
+            }
+          },
+          "required": [
+            "clockwise",
+            "counterclockwise"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "buttons",
+        "encoder"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

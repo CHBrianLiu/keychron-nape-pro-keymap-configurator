@@ -1,0 +1,124 @@
+# Authoritative keymap. Edit this file, then npm run validate && npm run build.
+# Layer position is the visible Launcher layer number; names are not exported.
+version: 1
+device: nape-pro
+
+layers:
+  # Visible layer 0 (raw layer 1)
+  - buttons:
+      "01": { nape: scroll_mode }
+      "02": LCLK
+      "03":
+        tap: LG(C)
+        hold: LG(V)
+      "04": { nape: gesture_mode }
+      m1:
+        tap: MB4
+        hold: { mo: 1 }
+      m2: RCLK
+    encoder:
+      clockwise: LG(KP_PLUS)
+      counterclockwise: LG(KP_MINUS)
+
+  # Visible layer 1 (raw layer 2)
+  - buttons:
+      "01": MB4
+      "02": { nape: dpi_cycle }
+      "03": { nape: scroll_mode }
+      "04": { to: 2 }
+      m1: { mo: 1 }
+      m2: RCLK
+    encoder:
+      clockwise: C_VOLUME_UP
+      counterclockwise: C_VOLUME_DOWN
+
+  # Visible layer 2 (raw layer 3)
+  - buttons:
+      "01": L
+      "02": LCLK
+      "03": R
+      "04": LG(LS(N2))
+      m1: { to: 0 }
+      m2: LEFT_SHIFT
+    encoder:
+      clockwise: LG(KP_PLUS)
+      counterclockwise: LG(KP_MINUS)
+
+  # Visible layer 3 (raw layer 4)
+  - buttons:
+      "01": LCLK
+      "02": RCLK
+      "03":
+        tap: LG(LS(N2))
+        hold: LEFT_GUI
+      "04":
+        tap: MB5
+        hold: LEFT_SHIFT
+      m1: { nape: scroll_mode }
+      m2:
+        tap: MB4
+        hold: LEFT_GUI
+    encoder:
+      clockwise: C_VOLUME_UP
+      counterclockwise: C_VOLUME_DOWN
+
+  # Visible layer 4 (raw layer 5)
+  - buttons:
+      "01": RCLK
+      "02": LCLK
+      "03": LG(W)
+      "04": LC(K)
+      m1: { nape: scroll_mode }
+      m2: MB4
+    encoder:
+      clockwise: C_VOLUME_UP
+      counterclockwise: C_VOLUME_DOWN
+
+  # Visible layer 5 (raw layer 6)
+  - buttons:
+      "01": MB4
+      "02": { nape: dpi_cycle }
+      "03": { nape: scroll_mode }
+      "04": { nape: orientation_cycle }
+      m1: LCLK
+      m2: RCLK
+    encoder:
+      clockwise: C_VOLUME_UP
+      counterclockwise: C_VOLUME_DOWN
+
+  # Visible layer 6 (raw layer 7)
+  - buttons:
+      "01": MB4
+      "02": { nape: dpi_cycle }
+      "03": { nape: scroll_mode }
+      "04": { nape: orientation_cycle }
+      m1: LCLK
+      m2: RCLK
+    encoder:
+      clockwise: C_VOLUME_UP
+      counterclockwise: C_VOLUME_DOWN
+
+  # Visible layer 7 (raw layer 8)
+  - buttons:
+      "01": MB4
+      "02": { nape: dpi_cycle }
+      "03": { nape: scroll_mode }
+      "04": { nape: orientation_cycle }
+      m1: LCLK
+      m2: RCLK
+    encoder:
+      clockwise: C_VOLUME_UP
+      counterclockwise: C_VOLUME_DOWN
+
+# Numeric Launcher data from the original export; not ZMK encoded integers.
+preserved:
+  raw_layer_0:
+    keymap: [21034, 0, 212, 0, 209, 210, 21035]
+    encoder:
+      clockwise: 169
+      counterclockwise: 170
+    tap_hold: []
+  # One unmapped column-6 value for each visible layer, in the same order.
+  column_6: [21035, 21035, 21035, 21035, 21035, 21035, 21035, 21035]
+  combinations: []
+  combination_names: {}

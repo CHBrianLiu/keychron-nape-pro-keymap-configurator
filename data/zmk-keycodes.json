@@ -1,0 +1,3241 @@
+{
+  "revision": "4dd95d7840eb3d5a3f59bb29fbf1ab054715ef85",
+  "license": "MIT",
+  "copyright": "Copyright (c) 2020 The ZMK Contributors",
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/zmkfirmware/zmk/4dd95d7840eb3d5a3f59bb29fbf1ab054715ef85/app/include/dt-bindings/zmk/hid_usage.h",
+      "sha256": "bdc33ad32cae4132d518930d1d546a31694a4c9be23ba3e91ddac072ddd4364d"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/zmkfirmware/zmk/4dd95d7840eb3d5a3f59bb29fbf1ab054715ef85/app/include/dt-bindings/zmk/hid_usage_pages.h",
+      "sha256": "f73be7e38cc51706fc804867639e03f9d114e2467c4c6f1255618f31a2da9cb8"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/zmkfirmware/zmk/4dd95d7840eb3d5a3f59bb29fbf1ab054715ef85/app/include/dt-bindings/zmk/keys.h",
+      "sha256": "ba77257a1ee189c1b360c8860bc51a0226afb1b5c6ba53899dc309e1e73fdd9e"
+    }
+  ],
+  "keys": {
+    "SYSTEM_POWER": {
+      "page": 1,
+      "usage": 129,
+      "modifiers": 0
+    },
+    "SYS_PWR": {
+      "page": 1,
+      "usage": 129,
+      "modifiers": 0
+    },
+    "SYSTEM_SLEEP": {
+      "page": 1,
+      "usage": 130,
+      "modifiers": 0
+    },
+    "SYS_SLEEP": {
+      "page": 1,
+      "usage": 130,
+      "modifiers": 0
+    },
+    "SYSTEM_WAKE_UP": {
+      "page": 1,
+      "usage": 131,
+      "modifiers": 0
+    },
+    "SYS_WAKE": {
+      "page": 1,
+      "usage": 131,
+      "modifiers": 0
+    },
+    "A": {
+      "page": 7,
+      "usage": 4,
+      "modifiers": 0
+    },
+    "B": {
+      "page": 7,
+      "usage": 5,
+      "modifiers": 0
+    },
+    "C": {
+      "page": 7,
+      "usage": 6,
+      "modifiers": 0
+    },
+    "D": {
+      "page": 7,
+      "usage": 7,
+      "modifiers": 0
+    },
+    "E": {
+      "page": 7,
+      "usage": 8,
+      "modifiers": 0
+    },
+    "F": {
+      "page": 7,
+      "usage": 9,
+      "modifiers": 0
+    },
+    "G": {
+      "page": 7,
+      "usage": 10,
+      "modifiers": 0
+    },
+    "H": {
+      "page": 7,
+      "usage": 11,
+      "modifiers": 0
+    },
+    "I": {
+      "page": 7,
+      "usage": 12,
+      "modifiers": 0
+    },
+    "J": {
+      "page": 7,
+      "usage": 13,
+      "modifiers": 0
+    },
+    "K": {
+      "page": 7,
+      "usage": 14,
+      "modifiers": 0
+    },
+    "L": {
+      "page": 7,
+      "usage": 15,
+      "modifiers": 0
+    },
+    "M": {
+      "page": 7,
+      "usage": 16,
+      "modifiers": 0
+    },
+    "N": {
+      "page": 7,
+      "usage": 17,
+      "modifiers": 0
+    },
+    "O": {
+      "page": 7,
+      "usage": 18,
+      "modifiers": 0
+    },
+    "P": {
+      "page": 7,
+      "usage": 19,
+      "modifiers": 0
+    },
+    "Q": {
+      "page": 7,
+      "usage": 20,
+      "modifiers": 0
+    },
+    "R": {
+      "page": 7,
+      "usage": 21,
+      "modifiers": 0
+    },
+    "S": {
+      "page": 7,
+      "usage": 22,
+      "modifiers": 0
+    },
+    "T": {
+      "page": 7,
+      "usage": 23,
+      "modifiers": 0
+    },
+    "U": {
+      "page": 7,
+      "usage": 24,
+      "modifiers": 0
+    },
+    "V": {
+      "page": 7,
+      "usage": 25,
+      "modifiers": 0
+    },
+    "W": {
+      "page": 7,
+      "usage": 26,
+      "modifiers": 0
+    },
+    "X": {
+      "page": 7,
+      "usage": 27,
+      "modifiers": 0
+    },
+    "Y": {
+      "page": 7,
+      "usage": 28,
+      "modifiers": 0
+    },
+    "Z": {
+      "page": 7,
+      "usage": 29,
+      "modifiers": 0
+    },
+    "NUMBER_1": {
+      "page": 7,
+      "usage": 30,
+      "modifiers": 0
+    },
+    "N1": {
+      "page": 7,
+      "usage": 30,
+      "modifiers": 0
+    },
+    "NUM_1": {
+      "page": 7,
+      "usage": 30,
+      "modifiers": 0
+    },
+    "EXCLAMATION": {
+      "page": 7,
+      "usage": 30,
+      "modifiers": 2
+    },
+    "EXCL": {
+      "page": 7,
+      "usage": 30,
+      "modifiers": 2
+    },
+    "BANG": {
+      "page": 7,
+      "usage": 30,
+      "modifiers": 2
+    },
+    "NUMBER_2": {
+      "page": 7,
+      "usage": 31,
+      "modifiers": 0
+    },
+    "N2": {
+      "page": 7,
+      "usage": 31,
+      "modifiers": 0
+    },
+    "NUM_2": {
+      "page": 7,
+      "usage": 31,
+      "modifiers": 0
+    },
+    "AT_SIGN": {
+      "page": 7,
+      "usage": 31,
+      "modifiers": 2
+    },
+    "AT": {
+      "page": 7,
+      "usage": 31,
+      "modifiers": 2
+    },
+    "ATSN": {
+      "page": 7,
+      "usage": 31,
+      "modifiers": 2
+    },
+    "NUMBER_3": {
+      "page": 7,
+      "usage": 32,
+      "modifiers": 0
+    },
+    "N3": {
+      "page": 7,
+      "usage": 32,
+      "modifiers": 0
+    },
+    "NUM_3": {
+      "page": 7,
+      "usage": 32,
+      "modifiers": 0
+    },
+    "HASH": {
+      "page": 7,
+      "usage": 32,
+      "modifiers": 2
+    },
+    "POUND": {
+      "page": 7,
+      "usage": 32,
+      "modifiers": 2
+    },
+    "NUMBER_4": {
+      "page": 7,
+      "usage": 33,
+      "modifiers": 0
+    },
+    "N4": {
+      "page": 7,
+      "usage": 33,
+      "modifiers": 0
+    },
+    "NUM_4": {
+      "page": 7,
+      "usage": 33,
+      "modifiers": 0
+    },
+    "DOLLAR": {
+      "page": 7,
+      "usage": 33,
+      "modifiers": 2
+    },
+    "DLLR": {
+      "page": 7,
+      "usage": 33,
+      "modifiers": 2
+    },
+    "NUMBER_5": {
+      "page": 7,
+      "usage": 34,
+      "modifiers": 0
+    },
+    "N5": {
+      "page": 7,
+      "usage": 34,
+      "modifiers": 0
+    },
+    "NUM_5": {
+      "page": 7,
+      "usage": 34,
+      "modifiers": 0
+    },
+    "PERCENT": {
+      "page": 7,
+      "usage": 34,
+      "modifiers": 2
+    },
+    "PRCNT": {
+      "page": 7,
+      "usage": 34,
+      "modifiers": 2
+    },
+    "PRCT": {
+      "page": 7,
+      "usage": 34,
+      "modifiers": 2
+    },
+    "NUMBER_6": {
+      "page": 7,
+      "usage": 35,
+      "modifiers": 0
+    },
+    "N6": {
+      "page": 7,
+      "usage": 35,
+      "modifiers": 0
+    },
+    "NUM_6": {
+      "page": 7,
+      "usage": 35,
+      "modifiers": 0
+    },
+    "CARET": {
+      "page": 7,
+      "usage": 35,
+      "modifiers": 2
+    },
+    "CRRT": {
+      "page": 7,
+      "usage": 35,
+      "modifiers": 2
+    },
+    "NUMBER_7": {
+      "page": 7,
+      "usage": 36,
+      "modifiers": 0
+    },
+    "N7": {
+      "page": 7,
+      "usage": 36,
+      "modifiers": 0
+    },
+    "NUM_7": {
+      "page": 7,
+      "usage": 36,
+      "modifiers": 0
+    },
+    "AMPERSAND": {
+      "page": 7,
+      "usage": 36,
+      "modifiers": 2
+    },
+    "AMPS": {
+      "page": 7,
+      "usage": 36,
+      "modifiers": 2
+    },
+    "NUMBER_8": {
+      "page": 7,
+      "usage": 37,
+      "modifiers": 0
+    },
+    "N8": {
+      "page": 7,
+      "usage": 37,
+      "modifiers": 0
+    },
+    "NUM_8": {
+      "page": 7,
+      "usage": 37,
+      "modifiers": 0
+    },
+    "ASTERISK": {
+      "page": 7,
+      "usage": 37,
+      "modifiers": 2
+    },
+    "ASTRK": {
+      "page": 7,
+      "usage": 37,
+      "modifiers": 2
+    },
+    "STAR": {
+      "page": 7,
+      "usage": 37,
+      "modifiers": 2
+    },
+    "NUMBER_9": {
+      "page": 7,
+      "usage": 38,
+      "modifiers": 0
+    },
+    "N9": {
+      "page": 7,
+      "usage": 38,
+      "modifiers": 0
+    },
+    "NUM_9": {
+      "page": 7,
+      "usage": 38,
+      "modifiers": 0
+    },
+    "LEFT_PARENTHESIS": {
+      "page": 7,
+      "usage": 38,
+      "modifiers": 2
+    },
+    "LPAR": {
+      "page": 7,
+      "usage": 38,
+      "modifiers": 2
+    },
+    "LPRN": {
+      "page": 7,
+      "usage": 38,
+      "modifiers": 2
+    },
+    "NUMBER_0": {
+      "page": 7,
+      "usage": 39,
+      "modifiers": 0
+    },
+    "N0": {
+      "page": 7,
+      "usage": 39,
+      "modifiers": 0
+    },
+    "NUM_0": {
+      "page": 7,
+      "usage": 39,
+      "modifiers": 0
+    },
+    "RIGHT_PARENTHESIS": {
+      "page": 7,
+      "usage": 39,
+      "modifiers": 2
+    },
+    "RPAR": {
+      "page": 7,
+      "usage": 39,
+      "modifiers": 2
+    },
+    "RPRN": {
+      "page": 7,
+      "usage": 39,
+      "modifiers": 2
+    },
+    "RETURN": {
+      "page": 7,
+      "usage": 40,
+      "modifiers": 0
+    },
+    "ENTER": {
+      "page": 7,
+      "usage": 40,
+      "modifiers": 0
+    },
+    "RET": {
+      "page": 7,
+      "usage": 40,
+      "modifiers": 0
+    },
+    "ESCAPE": {
+      "page": 7,
+      "usage": 41,
+      "modifiers": 0
+    },
+    "ESC": {
+      "page": 7,
+      "usage": 41,
+      "modifiers": 0
+    },
+    "BACKSPACE": {
+      "page": 7,
+      "usage": 42,
+      "modifiers": 0
+    },
+    "BSPC": {
+      "page": 7,
+      "usage": 42,
+      "modifiers": 0
+    },
+    "BKSP": {
+      "page": 7,
+      "usage": 42,
+      "modifiers": 0
+    },
+    "TAB": {
+      "page": 7,
+      "usage": 43,
+      "modifiers": 0
+    },
+    "SPACE": {
+      "page": 7,
+      "usage": 44,
+      "modifiers": 0
+    },
+    "SPC": {
+      "page": 7,
+      "usage": 44,
+      "modifiers": 0
+    },
+    "MINUS": {
+      "page": 7,
+      "usage": 45,
+      "modifiers": 0
+    },
+    "UNDERSCORE": {
+      "page": 7,
+      "usage": 45,
+      "modifiers": 2
+    },
+    "UNDER": {
+      "page": 7,
+      "usage": 45,
+      "modifiers": 2
+    },
+    "EQUAL": {
+      "page": 7,
+      "usage": 46,
+      "modifiers": 0
+    },
+    "EQL": {
+      "page": 7,
+      "usage": 46,
+      "modifiers": 0
+    },
+    "PLUS": {
+      "page": 7,
+      "usage": 46,
+      "modifiers": 2
+    },
+    "LEFT_BRACKET": {
+      "page": 7,
+      "usage": 47,
+      "modifiers": 0
+    },
+    "LBKT": {
+      "page": 7,
+      "usage": 47,
+      "modifiers": 0
+    },
+    "LEFT_BRACE": {
+      "page": 7,
+      "usage": 47,
+      "modifiers": 2
+    },
+    "LBRC": {
+      "page": 7,
+      "usage": 47,
+      "modifiers": 2
+    },
+    "LCUR": {
+      "page": 7,
+      "usage": 47,
+      "modifiers": 2
+    },
+    "RIGHT_BRACKET": {
+      "page": 7,
+      "usage": 48,
+      "modifiers": 0
+    },
+    "RBKT": {
+      "page": 7,
+      "usage": 48,
+      "modifiers": 0
+    },
+    "RIGHT_BRACE": {
+      "page": 7,
+      "usage": 48,
+      "modifiers": 2
+    },
+    "RBRC": {
+      "page": 7,
+      "usage": 48,
+      "modifiers": 2
+    },
+    "RCUR": {
+      "page": 7,
+      "usage": 48,
+      "modifiers": 2
+    },
+    "BACKSLASH": {
+      "page": 7,
+      "usage": 49,
+      "modifiers": 0
+    },
+    "BSLH": {
+      "page": 7,
+      "usage": 49,
+      "modifiers": 0
+    },
+    "PIPE": {
+      "page": 7,
+      "usage": 49,
+      "modifiers": 2
+    },
+    "NON_US_HASH": {
+      "page": 7,
+      "usage": 50,
+      "modifiers": 0
+    },
+    "NUHS": {
+      "page": 7,
+      "usage": 50,
+      "modifiers": 0
+    },
+    "TILDE2": {
+      "page": 7,
+      "usage": 50,
+      "modifiers": 2
+    },
+    "SEMICOLON": {
+      "page": 7,
+      "usage": 51,
+      "modifiers": 0
+    },
+    "SEMI": {
+      "page": 7,
+      "usage": 51,
+      "modifiers": 0
+    },
+    "SCLN": {
+      "page": 7,
+      "usage": 51,
+      "modifiers": 0
+    },
+    "COLON": {
+      "page": 7,
+      "usage": 51,
+      "modifiers": 2
+    },
+    "COLN": {
+      "page": 7,
+      "usage": 51,
+      "modifiers": 2
+    },
+    "SINGLE_QUOTE": {
+      "page": 7,
+      "usage": 52,
+      "modifiers": 0
+    },
+    "SQT": {
+      "page": 7,
+      "usage": 52,
+      "modifiers": 0
+    },
+    "APOSTROPHE": {
+      "page": 7,
+      "usage": 52,
+      "modifiers": 0
+    },
+    "APOS": {
+      "page": 7,
+      "usage": 52,
+      "modifiers": 0
+    },
+    "QUOT": {
+      "page": 7,
+      "usage": 52,
+      "modifiers": 0
+    },
+    "DOUBLE_QUOTES": {
+      "page": 7,
+      "usage": 52,
+      "modifiers": 2
+    },
+    "DQT": {
+      "page": 7,
+      "usage": 52,
+      "modifiers": 2
+    },
+    "GRAVE": {
+      "page": 7,
+      "usage": 53,
+      "modifiers": 0
+    },
+    "GRAV": {
+      "page": 7,
+      "usage": 53,
+      "modifiers": 0
+    },
+    "TILDE": {
+      "page": 7,
+      "usage": 53,
+      "modifiers": 2
+    },
+    "TILD": {
+      "page": 7,
+      "usage": 53,
+      "modifiers": 2
+    },
+    "COMMA": {
+      "page": 7,
+      "usage": 54,
+      "modifiers": 0
+    },
+    "CMMA": {
+      "page": 7,
+      "usage": 54,
+      "modifiers": 0
+    },
+    "LESS_THAN": {
+      "page": 7,
+      "usage": 54,
+      "modifiers": 2
+    },
+    "LT": {
+      "page": 7,
+      "usage": 54,
+      "modifiers": 2
+    },
+    "LABT": {
+      "page": 7,
+      "usage": 54,
+      "modifiers": 2
+    },
+    "PERIOD": {
+      "page": 7,
+      "usage": 55,
+      "modifiers": 0
+    },
+    "DOT": {
+      "page": 7,
+      "usage": 55,
+      "modifiers": 0
+    },
+    "GREATER_THAN": {
+      "page": 7,
+      "usage": 55,
+      "modifiers": 2
+    },
+    "GT": {
+      "page": 7,
+      "usage": 55,
+      "modifiers": 2
+    },
+    "RABT": {
+      "page": 7,
+      "usage": 55,
+      "modifiers": 2
+    },
+    "SLASH": {
+      "page": 7,
+      "usage": 56,
+      "modifiers": 0
+    },
+    "FSLH": {
+      "page": 7,
+      "usage": 56,
+      "modifiers": 0
+    },
+    "QUESTION": {
+      "page": 7,
+      "usage": 56,
+      "modifiers": 2
+    },
+    "QMARK": {
+      "page": 7,
+      "usage": 56,
+      "modifiers": 2
+    },
+    "CAPSLOCK": {
+      "page": 7,
+      "usage": 57,
+      "modifiers": 0
+    },
+    "CAPS": {
+      "page": 7,
+      "usage": 57,
+      "modifiers": 0
+    },
+    "CLCK": {
+      "page": 7,
+      "usage": 57,
+      "modifiers": 0
+    },
+    "F1": {
+      "page": 7,
+      "usage": 58,
+      "modifiers": 0
+    },
+    "F2": {
+      "page": 7,
+      "usage": 59,
+      "modifiers": 0
+    },
+    "F3": {
+      "page": 7,
+      "usage": 60,
+      "modifiers": 0
+    },
+    "F4": {
+      "page": 7,
+      "usage": 61,
+      "modifiers": 0
+    },
+    "F5": {
+      "page": 7,
+      "usage": 62,
+      "modifiers": 0
+    },
+    "F6": {
+      "page": 7,
+      "usage": 63,
+      "modifiers": 0
+    },
+    "F7": {
+      "page": 7,
+      "usage": 64,
+      "modifiers": 0
+    },
+    "F8": {
+      "page": 7,
+      "usage": 65,
+      "modifiers": 0
+    },
+    "F9": {
+      "page": 7,
+      "usage": 66,
+      "modifiers": 0
+    },
+    "F10": {
+      "page": 7,
+      "usage": 67,
+      "modifiers": 0
+    },
+    "F11": {
+      "page": 7,
+      "usage": 68,
+      "modifiers": 0
+    },
+    "F12": {
+      "page": 7,
+      "usage": 69,
+      "modifiers": 0
+    },
+    "PRINTSCREEN": {
+      "page": 7,
+      "usage": 70,
+      "modifiers": 0
+    },
+    "PSCRN": {
+      "page": 7,
+      "usage": 70,
+      "modifiers": 0
+    },
+    "PRSC": {
+      "page": 7,
+      "usage": 70,
+      "modifiers": 0
+    },
+    "SCROLLLOCK": {
+      "page": 7,
+      "usage": 71,
+      "modifiers": 0
+    },
+    "SLCK": {
+      "page": 7,
+      "usage": 71,
+      "modifiers": 0
+    },
+    "SCLK": {
+      "page": 7,
+      "usage": 71,
+      "modifiers": 0
+    },
+    "PAUSE_BREAK": {
+      "page": 7,
+      "usage": 72,
+      "modifiers": 0
+    },
+    "PAUS": {
+      "page": 7,
+      "usage": 72,
+      "modifiers": 0
+    },
+    "INSERT": {
+      "page": 7,
+      "usage": 73,
+      "modifiers": 0
+    },
+    "INS": {
+      "page": 7,
+      "usage": 73,
+      "modifiers": 0
+    },
+    "HOME": {
+      "page": 7,
+      "usage": 74,
+      "modifiers": 0
+    },
+    "PAGE_UP": {
+      "page": 7,
+      "usage": 75,
+      "modifiers": 0
+    },
+    "PG_UP": {
+      "page": 7,
+      "usage": 75,
+      "modifiers": 0
+    },
+    "PGUP": {
+      "page": 7,
+      "usage": 75,
+      "modifiers": 0
+    },
+    "DELETE": {
+      "page": 7,
+      "usage": 76,
+      "modifiers": 0
+    },
+    "DEL": {
+      "page": 7,
+      "usage": 76,
+      "modifiers": 0
+    },
+    "END": {
+      "page": 7,
+      "usage": 77,
+      "modifiers": 0
+    },
+    "PAGE_DOWN": {
+      "page": 7,
+      "usage": 78,
+      "modifiers": 0
+    },
+    "PG_DN": {
+      "page": 7,
+      "usage": 78,
+      "modifiers": 0
+    },
+    "PGDN": {
+      "page": 7,
+      "usage": 78,
+      "modifiers": 0
+    },
+    "RIGHT_ARROW": {
+      "page": 7,
+      "usage": 79,
+      "modifiers": 0
+    },
+    "RIGHT": {
+      "page": 7,
+      "usage": 79,
+      "modifiers": 0
+    },
+    "RARW": {
+      "page": 7,
+      "usage": 79,
+      "modifiers": 0
+    },
+    "LEFT_ARROW": {
+      "page": 7,
+      "usage": 80,
+      "modifiers": 0
+    },
+    "LEFT": {
+      "page": 7,
+      "usage": 80,
+      "modifiers": 0
+    },
+    "LARW": {
+      "page": 7,
+      "usage": 80,
+      "modifiers": 0
+    },
+    "DOWN_ARROW": {
+      "page": 7,
+      "usage": 81,
+      "modifiers": 0
+    },
+    "DOWN": {
+      "page": 7,
+      "usage": 81,
+      "modifiers": 0
+    },
+    "DARW": {
+      "page": 7,
+      "usage": 81,
+      "modifiers": 0
+    },
+    "UP_ARROW": {
+      "page": 7,
+      "usage": 82,
+      "modifiers": 0
+    },
+    "UP": {
+      "page": 7,
+      "usage": 82,
+      "modifiers": 0
+    },
+    "UARW": {
+      "page": 7,
+      "usage": 82,
+      "modifiers": 0
+    },
+    "KP_NUMLOCK": {
+      "page": 7,
+      "usage": 83,
+      "modifiers": 0
+    },
+    "KP_NUM": {
+      "page": 7,
+      "usage": 83,
+      "modifiers": 0
+    },
+    "KP_NLCK": {
+      "page": 7,
+      "usage": 83,
+      "modifiers": 0
+    },
+    "CLEAR2": {
+      "page": 7,
+      "usage": 83,
+      "modifiers": 2
+    },
+    "KP_DIVIDE": {
+      "page": 7,
+      "usage": 84,
+      "modifiers": 0
+    },
+    "KP_SLASH": {
+      "page": 7,
+      "usage": 84,
+      "modifiers": 0
+    },
+    "KDIV": {
+      "page": 7,
+      "usage": 84,
+      "modifiers": 0
+    },
+    "KP_MULTIPLY": {
+      "page": 7,
+      "usage": 85,
+      "modifiers": 0
+    },
+    "KP_ASTERISK": {
+      "page": 7,
+      "usage": 85,
+      "modifiers": 0
+    },
+    "KMLT": {
+      "page": 7,
+      "usage": 85,
+      "modifiers": 0
+    },
+    "KP_MINUS": {
+      "page": 7,
+      "usage": 86,
+      "modifiers": 0
+    },
+    "KP_SUBTRACT": {
+      "page": 7,
+      "usage": 86,
+      "modifiers": 0
+    },
+    "KMIN": {
+      "page": 7,
+      "usage": 86,
+      "modifiers": 0
+    },
+    "KP_PLUS": {
+      "page": 7,
+      "usage": 87,
+      "modifiers": 0
+    },
+    "KPLS": {
+      "page": 7,
+      "usage": 87,
+      "modifiers": 0
+    },
+    "KP_ENTER": {
+      "page": 7,
+      "usage": 88,
+      "modifiers": 0
+    },
+    "KP_NUMBER_1": {
+      "page": 7,
+      "usage": 89,
+      "modifiers": 0
+    },
+    "KP_N1": {
+      "page": 7,
+      "usage": 89,
+      "modifiers": 0
+    },
+    "KP_NUMBER_2": {
+      "page": 7,
+      "usage": 90,
+      "modifiers": 0
+    },
+    "KP_N2": {
+      "page": 7,
+      "usage": 90,
+      "modifiers": 0
+    },
+    "KP_NUMBER_3": {
+      "page": 7,
+      "usage": 91,
+      "modifiers": 0
+    },
+    "KP_N3": {
+      "page": 7,
+      "usage": 91,
+      "modifiers": 0
+    },
+    "KP_NUMBER_4": {
+      "page": 7,
+      "usage": 92,
+      "modifiers": 0
+    },
+    "KP_N4": {
+      "page": 7,
+      "usage": 92,
+      "modifiers": 0
+    },
+    "KP_NUMBER_5": {
+      "page": 7,
+      "usage": 93,
+      "modifiers": 0
+    },
+    "KP_N5": {
+      "page": 7,
+      "usage": 93,
+      "modifiers": 0
+    },
+    "KP_NUMBER_6": {
+      "page": 7,
+      "usage": 94,
+      "modifiers": 0
+    },
+    "KP_N6": {
+      "page": 7,
+      "usage": 94,
+      "modifiers": 0
+    },
+    "KP_NUMBER_7": {
+      "page": 7,
+      "usage": 95,
+      "modifiers": 0
+    },
+    "KP_N7": {
+      "page": 7,
+      "usage": 95,
+      "modifiers": 0
+    },
+    "KP_NUMBER_8": {
+      "page": 7,
+      "usage": 96,
+      "modifiers": 0
+    },
+    "KP_N8": {
+      "page": 7,
+      "usage": 96,
+      "modifiers": 0
+    },
+    "KP_NUMBER_9": {
+      "page": 7,
+      "usage": 97,
+      "modifiers": 0
+    },
+    "KP_N9": {
+      "page": 7,
+      "usage": 97,
+      "modifiers": 0
+    },
+    "KP_NUMBER_0": {
+      "page": 7,
+      "usage": 98,
+      "modifiers": 0
+    },
+    "KP_N0": {
+      "page": 7,
+      "usage": 98,
+      "modifiers": 0
+    },
+    "KP_DOT": {
+      "page": 7,
+      "usage": 99,
+      "modifiers": 0
+    },
+    "NON_US_BACKSLASH": {
+      "page": 7,
+      "usage": 100,
+      "modifiers": 0
+    },
+    "NON_US_BSLH": {
+      "page": 7,
+      "usage": 100,
+      "modifiers": 0
+    },
+    "NUBS": {
+      "page": 7,
+      "usage": 100,
+      "modifiers": 0
+    },
+    "PIPE2": {
+      "page": 7,
+      "usage": 100,
+      "modifiers": 2
+    },
+    "K_APPLICATION": {
+      "page": 7,
+      "usage": 101,
+      "modifiers": 0
+    },
+    "K_APP": {
+      "page": 7,
+      "usage": 101,
+      "modifiers": 0
+    },
+    "K_CONTEXT_MENU": {
+      "page": 7,
+      "usage": 101,
+      "modifiers": 0
+    },
+    "K_CMENU": {
+      "page": 7,
+      "usage": 101,
+      "modifiers": 0
+    },
+    "GUI": {
+      "page": 7,
+      "usage": 101,
+      "modifiers": 0
+    },
+    "K_POWER": {
+      "page": 7,
+      "usage": 102,
+      "modifiers": 0
+    },
+    "K_PWR": {
+      "page": 7,
+      "usage": 102,
+      "modifiers": 0
+    },
+    "KP_EQUAL": {
+      "page": 7,
+      "usage": 103,
+      "modifiers": 0
+    },
+    "F13": {
+      "page": 7,
+      "usage": 104,
+      "modifiers": 0
+    },
+    "F14": {
+      "page": 7,
+      "usage": 105,
+      "modifiers": 0
+    },
+    "F15": {
+      "page": 7,
+      "usage": 106,
+      "modifiers": 0
+    },
+    "F16": {
+      "page": 7,
+      "usage": 107,
+      "modifiers": 0
+    },
+    "F17": {
+      "page": 7,
+      "usage": 108,
+      "modifiers": 0
+    },
+    "F18": {
+      "page": 7,
+      "usage": 109,
+      "modifiers": 0
+    },
+    "F19": {
+      "page": 7,
+      "usage": 110,
+      "modifiers": 0
+    },
+    "F20": {
+      "page": 7,
+      "usage": 111,
+      "modifiers": 0
+    },
+    "F21": {
+      "page": 7,
+      "usage": 112,
+      "modifiers": 0
+    },
+    "F22": {
+      "page": 7,
+      "usage": 113,
+      "modifiers": 0
+    },
+    "F23": {
+      "page": 7,
+      "usage": 114,
+      "modifiers": 0
+    },
+    "F24": {
+      "page": 7,
+      "usage": 115,
+      "modifiers": 0
+    },
+    "K_EXECUTE": {
+      "page": 7,
+      "usage": 116,
+      "modifiers": 0
+    },
+    "K_EXEC": {
+      "page": 7,
+      "usage": 116,
+      "modifiers": 0
+    },
+    "K_HELP": {
+      "page": 7,
+      "usage": 117,
+      "modifiers": 0
+    },
+    "K_MENU": {
+      "page": 7,
+      "usage": 118,
+      "modifiers": 0
+    },
+    "K_SELECT": {
+      "page": 7,
+      "usage": 119,
+      "modifiers": 0
+    },
+    "K_STOP": {
+      "page": 7,
+      "usage": 120,
+      "modifiers": 0
+    },
+    "K_AGAIN": {
+      "page": 7,
+      "usage": 121,
+      "modifiers": 0
+    },
+    "K_REDO": {
+      "page": 7,
+      "usage": 121,
+      "modifiers": 0
+    },
+    "K_UNDO": {
+      "page": 7,
+      "usage": 122,
+      "modifiers": 0
+    },
+    "UNDO": {
+      "page": 7,
+      "usage": 122,
+      "modifiers": 0
+    },
+    "K_CUT": {
+      "page": 7,
+      "usage": 123,
+      "modifiers": 0
+    },
+    "CUT": {
+      "page": 7,
+      "usage": 123,
+      "modifiers": 0
+    },
+    "K_COPY": {
+      "page": 7,
+      "usage": 124,
+      "modifiers": 0
+    },
+    "COPY": {
+      "page": 7,
+      "usage": 124,
+      "modifiers": 0
+    },
+    "K_PASTE": {
+      "page": 7,
+      "usage": 125,
+      "modifiers": 0
+    },
+    "PSTE": {
+      "page": 7,
+      "usage": 125,
+      "modifiers": 0
+    },
+    "K_FIND": {
+      "page": 7,
+      "usage": 126,
+      "modifiers": 0
+    },
+    "K_MUTE": {
+      "page": 7,
+      "usage": 127,
+      "modifiers": 0
+    },
+    "K_VOLUME_UP": {
+      "page": 7,
+      "usage": 128,
+      "modifiers": 0
+    },
+    "K_VOL_UP": {
+      "page": 7,
+      "usage": 128,
+      "modifiers": 0
+    },
+    "VOLU": {
+      "page": 7,
+      "usage": 128,
+      "modifiers": 0
+    },
+    "K_VOLUME_DOWN": {
+      "page": 7,
+      "usage": 129,
+      "modifiers": 0
+    },
+    "K_VOL_DN": {
+      "page": 7,
+      "usage": 129,
+      "modifiers": 0
+    },
+    "VOLD": {
+      "page": 7,
+      "usage": 129,
+      "modifiers": 0
+    },
+    "LOCKING_CAPS": {
+      "page": 7,
+      "usage": 130,
+      "modifiers": 0
+    },
+    "LCAPS": {
+      "page": 7,
+      "usage": 130,
+      "modifiers": 0
+    },
+    "LOCKING_NUM": {
+      "page": 7,
+      "usage": 131,
+      "modifiers": 0
+    },
+    "LNLCK": {
+      "page": 7,
+      "usage": 131,
+      "modifiers": 0
+    },
+    "LOCKING_SCROLL": {
+      "page": 7,
+      "usage": 132,
+      "modifiers": 0
+    },
+    "LSLCK": {
+      "page": 7,
+      "usage": 132,
+      "modifiers": 0
+    },
+    "KP_COMMA": {
+      "page": 7,
+      "usage": 133,
+      "modifiers": 0
+    },
+    "KP_EQUAL_AS400": {
+      "page": 7,
+      "usage": 134,
+      "modifiers": 0
+    },
+    "INTERNATIONAL_1": {
+      "page": 7,
+      "usage": 135,
+      "modifiers": 0
+    },
+    "INT1": {
+      "page": 7,
+      "usage": 135,
+      "modifiers": 0
+    },
+    "INT_RO": {
+      "page": 7,
+      "usage": 135,
+      "modifiers": 0
+    },
+    "INTERNATIONAL_2": {
+      "page": 7,
+      "usage": 136,
+      "modifiers": 0
+    },
+    "INT2": {
+      "page": 7,
+      "usage": 136,
+      "modifiers": 0
+    },
+    "INT_KATAKANAHIRAGANA": {
+      "page": 7,
+      "usage": 136,
+      "modifiers": 0
+    },
+    "INT_KANA": {
+      "page": 7,
+      "usage": 136,
+      "modifiers": 0
+    },
+    "INTERNATIONAL_3": {
+      "page": 7,
+      "usage": 137,
+      "modifiers": 0
+    },
+    "INT3": {
+      "page": 7,
+      "usage": 137,
+      "modifiers": 0
+    },
+    "INT_YEN": {
+      "page": 7,
+      "usage": 137,
+      "modifiers": 0
+    },
+    "INTERNATIONAL_4": {
+      "page": 7,
+      "usage": 138,
+      "modifiers": 0
+    },
+    "INT4": {
+      "page": 7,
+      "usage": 138,
+      "modifiers": 0
+    },
+    "INT_HENKAN": {
+      "page": 7,
+      "usage": 138,
+      "modifiers": 0
+    },
+    "INTERNATIONAL_5": {
+      "page": 7,
+      "usage": 139,
+      "modifiers": 0
+    },
+    "INT5": {
+      "page": 7,
+      "usage": 139,
+      "modifiers": 0
+    },
+    "INT_MUHENKAN": {
+      "page": 7,
+      "usage": 139,
+      "modifiers": 0
+    },
+    "INTERNATIONAL_6": {
+      "page": 7,
+      "usage": 140,
+      "modifiers": 0
+    },
+    "INT6": {
+      "page": 7,
+      "usage": 140,
+      "modifiers": 0
+    },
+    "INT_KPJPCOMMA": {
+      "page": 7,
+      "usage": 140,
+      "modifiers": 0
+    },
+    "INTERNATIONAL_7": {
+      "page": 7,
+      "usage": 141,
+      "modifiers": 0
+    },
+    "INT7": {
+      "page": 7,
+      "usage": 141,
+      "modifiers": 0
+    },
+    "INTERNATIONAL_8": {
+      "page": 7,
+      "usage": 142,
+      "modifiers": 0
+    },
+    "INT8": {
+      "page": 7,
+      "usage": 142,
+      "modifiers": 0
+    },
+    "INTERNATIONAL_9": {
+      "page": 7,
+      "usage": 143,
+      "modifiers": 0
+    },
+    "INT9": {
+      "page": 7,
+      "usage": 143,
+      "modifiers": 0
+    },
+    "LANGUAGE_1": {
+      "page": 7,
+      "usage": 144,
+      "modifiers": 0
+    },
+    "LANG1": {
+      "page": 7,
+      "usage": 144,
+      "modifiers": 0
+    },
+    "LANG_HANGEUL": {
+      "page": 7,
+      "usage": 144,
+      "modifiers": 0
+    },
+    "LANGUAGE_2": {
+      "page": 7,
+      "usage": 145,
+      "modifiers": 0
+    },
+    "LANG2": {
+      "page": 7,
+      "usage": 145,
+      "modifiers": 0
+    },
+    "LANG_HANJA": {
+      "page": 7,
+      "usage": 145,
+      "modifiers": 0
+    },
+    "LANGUAGE_3": {
+      "page": 7,
+      "usage": 146,
+      "modifiers": 0
+    },
+    "LANG3": {
+      "page": 7,
+      "usage": 146,
+      "modifiers": 0
+    },
+    "LANG_KATAKANA": {
+      "page": 7,
+      "usage": 146,
+      "modifiers": 0
+    },
+    "LANGUAGE_4": {
+      "page": 7,
+      "usage": 147,
+      "modifiers": 0
+    },
+    "LANG4": {
+      "page": 7,
+      "usage": 147,
+      "modifiers": 0
+    },
+    "LANG_HIRAGANA": {
+      "page": 7,
+      "usage": 147,
+      "modifiers": 0
+    },
+    "LANGUAGE_5": {
+      "page": 7,
+      "usage": 148,
+      "modifiers": 0
+    },
+    "LANG5": {
+      "page": 7,
+      "usage": 148,
+      "modifiers": 0
+    },
+    "LANG_ZENKAKUHANKAKU": {
+      "page": 7,
+      "usage": 148,
+      "modifiers": 0
+    },
+    "LANGUAGE_6": {
+      "page": 7,
+      "usage": 149,
+      "modifiers": 0
+    },
+    "LANG6": {
+      "page": 7,
+      "usage": 149,
+      "modifiers": 0
+    },
+    "LANGUAGE_7": {
+      "page": 7,
+      "usage": 150,
+      "modifiers": 0
+    },
+    "LANG7": {
+      "page": 7,
+      "usage": 150,
+      "modifiers": 0
+    },
+    "LANGUAGE_8": {
+      "page": 7,
+      "usage": 151,
+      "modifiers": 0
+    },
+    "LANG8": {
+      "page": 7,
+      "usage": 151,
+      "modifiers": 0
+    },
+    "LANGUAGE_9": {
+      "page": 7,
+      "usage": 152,
+      "modifiers": 0
+    },
+    "LANG9": {
+      "page": 7,
+      "usage": 152,
+      "modifiers": 0
+    },
+    "ALT_ERASE": {
+      "page": 7,
+      "usage": 153,
+      "modifiers": 0
+    },
+    "SYSREQ": {
+      "page": 7,
+      "usage": 154,
+      "modifiers": 0
+    },
+    "ATTENTION": {
+      "page": 7,
+      "usage": 154,
+      "modifiers": 0
+    },
+    "K_CANCEL": {
+      "page": 7,
+      "usage": 155,
+      "modifiers": 0
+    },
+    "CLEAR": {
+      "page": 7,
+      "usage": 156,
+      "modifiers": 0
+    },
+    "PRIOR": {
+      "page": 7,
+      "usage": 157,
+      "modifiers": 0
+    },
+    "RETURN2": {
+      "page": 7,
+      "usage": 158,
+      "modifiers": 0
+    },
+    "RET2": {
+      "page": 7,
+      "usage": 158,
+      "modifiers": 0
+    },
+    "SEPARATOR": {
+      "page": 7,
+      "usage": 159,
+      "modifiers": 0
+    },
+    "OUT": {
+      "page": 7,
+      "usage": 160,
+      "modifiers": 0
+    },
+    "OPER": {
+      "page": 7,
+      "usage": 161,
+      "modifiers": 0
+    },
+    "CLEAR_AGAIN": {
+      "page": 7,
+      "usage": 162,
+      "modifiers": 0
+    },
+    "CRSEL": {
+      "page": 7,
+      "usage": 163,
+      "modifiers": 0
+    },
+    "EXSEL": {
+      "page": 7,
+      "usage": 164,
+      "modifiers": 0
+    },
+    "CURU": {
+      "page": 7,
+      "usage": 180,
+      "modifiers": 0
+    },
+    "KP_LEFT_PARENTHESIS": {
+      "page": 7,
+      "usage": 182,
+      "modifiers": 0
+    },
+    "KP_LPAR": {
+      "page": 7,
+      "usage": 182,
+      "modifiers": 0
+    },
+    "KP_RIGHT_PARENTHESIS": {
+      "page": 7,
+      "usage": 183,
+      "modifiers": 0
+    },
+    "KP_RPAR": {
+      "page": 7,
+      "usage": 183,
+      "modifiers": 0
+    },
+    "KSPC": {
+      "page": 7,
+      "usage": 205,
+      "modifiers": 0
+    },
+    "KP_CLEAR": {
+      "page": 7,
+      "usage": 216,
+      "modifiers": 0
+    },
+    "LEFT_CONTROL": {
+      "page": 7,
+      "usage": 224,
+      "modifiers": 0
+    },
+    "LCTRL": {
+      "page": 7,
+      "usage": 224,
+      "modifiers": 0
+    },
+    "LCTL": {
+      "page": 7,
+      "usage": 224,
+      "modifiers": 0
+    },
+    "LEFT_SHIFT": {
+      "page": 7,
+      "usage": 225,
+      "modifiers": 0
+    },
+    "LSHIFT": {
+      "page": 7,
+      "usage": 225,
+      "modifiers": 0
+    },
+    "LSHFT": {
+      "page": 7,
+      "usage": 225,
+      "modifiers": 0
+    },
+    "LSFT": {
+      "page": 7,
+      "usage": 225,
+      "modifiers": 0
+    },
+    "LEFT_ALT": {
+      "page": 7,
+      "usage": 226,
+      "modifiers": 0
+    },
+    "LALT": {
+      "page": 7,
+      "usage": 226,
+      "modifiers": 0
+    },
+    "LEFT_GUI": {
+      "page": 7,
+      "usage": 227,
+      "modifiers": 0
+    },
+    "LGUI": {
+      "page": 7,
+      "usage": 227,
+      "modifiers": 0
+    },
+    "LEFT_WIN": {
+      "page": 7,
+      "usage": 227,
+      "modifiers": 0
+    },
+    "LWIN": {
+      "page": 7,
+      "usage": 227,
+      "modifiers": 0
+    },
+    "LEFT_COMMAND": {
+      "page": 7,
+      "usage": 227,
+      "modifiers": 0
+    },
+    "LCMD": {
+      "page": 7,
+      "usage": 227,
+      "modifiers": 0
+    },
+    "LEFT_META": {
+      "page": 7,
+      "usage": 227,
+      "modifiers": 0
+    },
+    "LMETA": {
+      "page": 7,
+      "usage": 227,
+      "modifiers": 0
+    },
+    "RIGHT_CONTROL": {
+      "page": 7,
+      "usage": 228,
+      "modifiers": 0
+    },
+    "RCTRL": {
+      "page": 7,
+      "usage": 228,
+      "modifiers": 0
+    },
+    "RCTL": {
+      "page": 7,
+      "usage": 228,
+      "modifiers": 0
+    },
+    "RIGHT_SHIFT": {
+      "page": 7,
+      "usage": 229,
+      "modifiers": 0
+    },
+    "RSHIFT": {
+      "page": 7,
+      "usage": 229,
+      "modifiers": 0
+    },
+    "RSHFT": {
+      "page": 7,
+      "usage": 229,
+      "modifiers": 0
+    },
+    "RSFT": {
+      "page": 7,
+      "usage": 229,
+      "modifiers": 0
+    },
+    "RIGHT_ALT": {
+      "page": 7,
+      "usage": 230,
+      "modifiers": 0
+    },
+    "RALT": {
+      "page": 7,
+      "usage": 230,
+      "modifiers": 0
+    },
+    "RIGHT_GUI": {
+      "page": 7,
+      "usage": 231,
+      "modifiers": 0
+    },
+    "RGUI": {
+      "page": 7,
+      "usage": 231,
+      "modifiers": 0
+    },
+    "RIGHT_WIN": {
+      "page": 7,
+      "usage": 231,
+      "modifiers": 0
+    },
+    "RWIN": {
+      "page": 7,
+      "usage": 231,
+      "modifiers": 0
+    },
+    "RIGHT_COMMAND": {
+      "page": 7,
+      "usage": 231,
+      "modifiers": 0
+    },
+    "RCMD": {
+      "page": 7,
+      "usage": 231,
+      "modifiers": 0
+    },
+    "RIGHT_META": {
+      "page": 7,
+      "usage": 231,
+      "modifiers": 0
+    },
+    "RMETA": {
+      "page": 7,
+      "usage": 231,
+      "modifiers": 0
+    },
+    "K_PLAY_PAUSE": {
+      "page": 7,
+      "usage": 232,
+      "modifiers": 0
+    },
+    "K_PP": {
+      "page": 7,
+      "usage": 232,
+      "modifiers": 0
+    },
+    "K_STOP2": {
+      "page": 7,
+      "usage": 233,
+      "modifiers": 0
+    },
+    "K_PREVIOUS": {
+      "page": 7,
+      "usage": 234,
+      "modifiers": 0
+    },
+    "K_PREV": {
+      "page": 7,
+      "usage": 234,
+      "modifiers": 0
+    },
+    "K_NEXT": {
+      "page": 7,
+      "usage": 235,
+      "modifiers": 0
+    },
+    "K_EJECT": {
+      "page": 7,
+      "usage": 236,
+      "modifiers": 0
+    },
+    "K_VOLUME_UP2": {
+      "page": 7,
+      "usage": 237,
+      "modifiers": 0
+    },
+    "K_VOL_UP2": {
+      "page": 7,
+      "usage": 237,
+      "modifiers": 0
+    },
+    "K_VOLUME_DOWN2": {
+      "page": 7,
+      "usage": 238,
+      "modifiers": 0
+    },
+    "K_VOL_DN2": {
+      "page": 7,
+      "usage": 238,
+      "modifiers": 0
+    },
+    "K_MUTE2": {
+      "page": 7,
+      "usage": 239,
+      "modifiers": 0
+    },
+    "K_WWW": {
+      "page": 7,
+      "usage": 240,
+      "modifiers": 0
+    },
+    "K_BACK": {
+      "page": 7,
+      "usage": 241,
+      "modifiers": 0
+    },
+    "K_FORWARD": {
+      "page": 7,
+      "usage": 242,
+      "modifiers": 0
+    },
+    "K_STOP3": {
+      "page": 7,
+      "usage": 243,
+      "modifiers": 0
+    },
+    "K_FIND2": {
+      "page": 7,
+      "usage": 244,
+      "modifiers": 0
+    },
+    "K_SCROLL_UP": {
+      "page": 7,
+      "usage": 245,
+      "modifiers": 0
+    },
+    "K_SCROLL_DOWN": {
+      "page": 7,
+      "usage": 246,
+      "modifiers": 0
+    },
+    "K_EDIT": {
+      "page": 7,
+      "usage": 247,
+      "modifiers": 0
+    },
+    "K_SLEEP": {
+      "page": 7,
+      "usage": 248,
+      "modifiers": 0
+    },
+    "K_LOCK": {
+      "page": 7,
+      "usage": 249,
+      "modifiers": 0
+    },
+    "K_SCREENSAVER": {
+      "page": 7,
+      "usage": 249,
+      "modifiers": 0
+    },
+    "K_COFFEE": {
+      "page": 7,
+      "usage": 249,
+      "modifiers": 0
+    },
+    "K_REFRESH": {
+      "page": 7,
+      "usage": 250,
+      "modifiers": 0
+    },
+    "K_CALCULATOR": {
+      "page": 7,
+      "usage": 251,
+      "modifiers": 0
+    },
+    "K_CALC": {
+      "page": 7,
+      "usage": 251,
+      "modifiers": 0
+    },
+    "C_POWER": {
+      "page": 12,
+      "usage": 48,
+      "modifiers": 0
+    },
+    "C_PWR": {
+      "page": 12,
+      "usage": 48,
+      "modifiers": 0
+    },
+    "C_RESET": {
+      "page": 12,
+      "usage": 49,
+      "modifiers": 0
+    },
+    "C_SLEEP": {
+      "page": 12,
+      "usage": 50,
+      "modifiers": 0
+    },
+    "C_SLEEP_MODE": {
+      "page": 12,
+      "usage": 52,
+      "modifiers": 0
+    },
+    "C_MENU": {
+      "page": 12,
+      "usage": 64,
+      "modifiers": 0
+    },
+    "C_MENU_PICK": {
+      "page": 12,
+      "usage": 65,
+      "modifiers": 0
+    },
+    "C_MENU_SELECT": {
+      "page": 12,
+      "usage": 65,
+      "modifiers": 0
+    },
+    "C_MENU_UP": {
+      "page": 12,
+      "usage": 66,
+      "modifiers": 0
+    },
+    "C_MENU_DOWN": {
+      "page": 12,
+      "usage": 67,
+      "modifiers": 0
+    },
+    "C_MENU_LEFT": {
+      "page": 12,
+      "usage": 68,
+      "modifiers": 0
+    },
+    "C_MENU_RIGHT": {
+      "page": 12,
+      "usage": 69,
+      "modifiers": 0
+    },
+    "C_MENU_ESCAPE": {
+      "page": 12,
+      "usage": 70,
+      "modifiers": 0
+    },
+    "C_MENU_ESC": {
+      "page": 12,
+      "usage": 70,
+      "modifiers": 0
+    },
+    "C_MENU_INCREASE": {
+      "page": 12,
+      "usage": 71,
+      "modifiers": 0
+    },
+    "C_MENU_INC": {
+      "page": 12,
+      "usage": 71,
+      "modifiers": 0
+    },
+    "C_MENU_DECREASE": {
+      "page": 12,
+      "usage": 72,
+      "modifiers": 0
+    },
+    "C_MENU_DEC": {
+      "page": 12,
+      "usage": 72,
+      "modifiers": 0
+    },
+    "C_DATA_ON_SCREEN": {
+      "page": 12,
+      "usage": 96,
+      "modifiers": 0
+    },
+    "C_CAPTIONS": {
+      "page": 12,
+      "usage": 97,
+      "modifiers": 0
+    },
+    "C_SUBTITLES": {
+      "page": 12,
+      "usage": 97,
+      "modifiers": 0
+    },
+    "C_SNAPSHOT": {
+      "page": 12,
+      "usage": 101,
+      "modifiers": 0
+    },
+    "C_PIP": {
+      "page": 12,
+      "usage": 103,
+      "modifiers": 0
+    },
+    "C_RED_BUTTON": {
+      "page": 12,
+      "usage": 105,
+      "modifiers": 0
+    },
+    "C_RED": {
+      "page": 12,
+      "usage": 105,
+      "modifiers": 0
+    },
+    "C_GREEN_BUTTON": {
+      "page": 12,
+      "usage": 106,
+      "modifiers": 0
+    },
+    "C_GREEN": {
+      "page": 12,
+      "usage": 106,
+      "modifiers": 0
+    },
+    "C_BLUE_BUTTON": {
+      "page": 12,
+      "usage": 107,
+      "modifiers": 0
+    },
+    "C_BLUE": {
+      "page": 12,
+      "usage": 107,
+      "modifiers": 0
+    },
+    "C_YELLOW_BUTTON": {
+      "page": 12,
+      "usage": 108,
+      "modifiers": 0
+    },
+    "C_YELLOW": {
+      "page": 12,
+      "usage": 108,
+      "modifiers": 0
+    },
+    "C_ASPECT": {
+      "page": 12,
+      "usage": 109,
+      "modifiers": 0
+    },
+    "C_BRIGHTNESS_INC": {
+      "page": 12,
+      "usage": 111,
+      "modifiers": 0
+    },
+    "C_BRI_INC": {
+      "page": 12,
+      "usage": 111,
+      "modifiers": 0
+    },
+    "C_BRI_UP": {
+      "page": 12,
+      "usage": 111,
+      "modifiers": 0
+    },
+    "C_BRIGHTNESS_DEC": {
+      "page": 12,
+      "usage": 112,
+      "modifiers": 0
+    },
+    "C_BRI_DEC": {
+      "page": 12,
+      "usage": 112,
+      "modifiers": 0
+    },
+    "C_BRI_DN": {
+      "page": 12,
+      "usage": 112,
+      "modifiers": 0
+    },
+    "C_BACKLIGHT_TOGGLE": {
+      "page": 12,
+      "usage": 114,
+      "modifiers": 0
+    },
+    "C_BKLT_TOG": {
+      "page": 12,
+      "usage": 114,
+      "modifiers": 0
+    },
+    "C_BRIGHTNESS_MINIMUM": {
+      "page": 12,
+      "usage": 115,
+      "modifiers": 0
+    },
+    "C_BRI_MIN": {
+      "page": 12,
+      "usage": 115,
+      "modifiers": 0
+    },
+    "C_BRIGHTNESS_MAXIMUM": {
+      "page": 12,
+      "usage": 116,
+      "modifiers": 0
+    },
+    "C_BRI_MAX": {
+      "page": 12,
+      "usage": 116,
+      "modifiers": 0
+    },
+    "C_BRIGHTNESS_AUTO": {
+      "page": 12,
+      "usage": 117,
+      "modifiers": 0
+    },
+    "C_BRI_AUTO": {
+      "page": 12,
+      "usage": 117,
+      "modifiers": 0
+    },
+    "C_MEDIA_STEP": {
+      "page": 12,
+      "usage": 130,
+      "modifiers": 0
+    },
+    "C_MODE_STEP": {
+      "page": 12,
+      "usage": 130,
+      "modifiers": 0
+    },
+    "C_RECALL_LAST": {
+      "page": 12,
+      "usage": 131,
+      "modifiers": 0
+    },
+    "C_CHAN_LAST": {
+      "page": 12,
+      "usage": 131,
+      "modifiers": 0
+    },
+    "C_MEDIA_COMPUTER": {
+      "page": 12,
+      "usage": 136,
+      "modifiers": 0
+    },
+    "C_MEDIA_TV": {
+      "page": 12,
+      "usage": 137,
+      "modifiers": 0
+    },
+    "C_MEDIA_WWW": {
+      "page": 12,
+      "usage": 138,
+      "modifiers": 0
+    },
+    "C_MEDIA_DVD": {
+      "page": 12,
+      "usage": 139,
+      "modifiers": 0
+    },
+    "C_MEDIA_PHONE": {
+      "page": 12,
+      "usage": 140,
+      "modifiers": 0
+    },
+    "C_MEDIA_GUIDE": {
+      "page": 12,
+      "usage": 141,
+      "modifiers": 0
+    },
+    "C_MEDIA_VIDEOPHONE": {
+      "page": 12,
+      "usage": 142,
+      "modifiers": 0
+    },
+    "C_MEDIA_GAMES": {
+      "page": 12,
+      "usage": 143,
+      "modifiers": 0
+    },
+    "C_MEDIA_MESSAGES": {
+      "page": 12,
+      "usage": 144,
+      "modifiers": 0
+    },
+    "C_MEDIA_CD": {
+      "page": 12,
+      "usage": 145,
+      "modifiers": 0
+    },
+    "C_MEDIA_VCR": {
+      "page": 12,
+      "usage": 146,
+      "modifiers": 0
+    },
+    "C_MEDIA_TUNER": {
+      "page": 12,
+      "usage": 147,
+      "modifiers": 0
+    },
+    "C_QUIT": {
+      "page": 12,
+      "usage": 148,
+      "modifiers": 0
+    },
+    "C_HELP": {
+      "page": 12,
+      "usage": 149,
+      "modifiers": 0
+    },
+    "C_MEDIA_TAPE": {
+      "page": 12,
+      "usage": 150,
+      "modifiers": 0
+    },
+    "C_MEDIA_CABLE": {
+      "page": 12,
+      "usage": 151,
+      "modifiers": 0
+    },
+    "C_MEDIA_SATELLITE": {
+      "page": 12,
+      "usage": 152,
+      "modifiers": 0
+    },
+    "C_MEDIA_HOME": {
+      "page": 12,
+      "usage": 154,
+      "modifiers": 0
+    },
+    "C_CHANNEL_INC": {
+      "page": 12,
+      "usage": 156,
+      "modifiers": 0
+    },
+    "C_CHAN_INC": {
+      "page": 12,
+      "usage": 156,
+      "modifiers": 0
+    },
+    "C_CHANNEL_DEC": {
+      "page": 12,
+      "usage": 157,
+      "modifiers": 0
+    },
+    "C_CHAN_DEC": {
+      "page": 12,
+      "usage": 157,
+      "modifiers": 0
+    },
+    "C_MEDIA_VCR_PLUS": {
+      "page": 12,
+      "usage": 160,
+      "modifiers": 0
+    },
+    "C_PLAY": {
+      "page": 12,
+      "usage": 176,
+      "modifiers": 0
+    },
+    "C_PAUSE": {
+      "page": 12,
+      "usage": 177,
+      "modifiers": 0
+    },
+    "C_RECORD": {
+      "page": 12,
+      "usage": 178,
+      "modifiers": 0
+    },
+    "C_REC": {
+      "page": 12,
+      "usage": 178,
+      "modifiers": 0
+    },
+    "C_FAST_FORWARD": {
+      "page": 12,
+      "usage": 179,
+      "modifiers": 0
+    },
+    "C_FF": {
+      "page": 12,
+      "usage": 179,
+      "modifiers": 0
+    },
+    "C_REWIND": {
+      "page": 12,
+      "usage": 180,
+      "modifiers": 0
+    },
+    "C_RW": {
+      "page": 12,
+      "usage": 180,
+      "modifiers": 0
+    },
+    "C_NEXT": {
+      "page": 12,
+      "usage": 181,
+      "modifiers": 0
+    },
+    "M_NEXT": {
+      "page": 12,
+      "usage": 181,
+      "modifiers": 0
+    },
+    "C_PREVIOUS": {
+      "page": 12,
+      "usage": 182,
+      "modifiers": 0
+    },
+    "C_PREV": {
+      "page": 12,
+      "usage": 182,
+      "modifiers": 0
+    },
+    "M_PREV": {
+      "page": 12,
+      "usage": 182,
+      "modifiers": 0
+    },
+    "C_STOP": {
+      "page": 12,
+      "usage": 183,
+      "modifiers": 0
+    },
+    "M_STOP": {
+      "page": 12,
+      "usage": 183,
+      "modifiers": 0
+    },
+    "C_EJECT": {
+      "page": 12,
+      "usage": 184,
+      "modifiers": 0
+    },
+    "M_EJCT": {
+      "page": 12,
+      "usage": 184,
+      "modifiers": 0
+    },
+    "C_RANDOM_PLAY": {
+      "page": 12,
+      "usage": 185,
+      "modifiers": 0
+    },
+    "C_SHUFFLE": {
+      "page": 12,
+      "usage": 185,
+      "modifiers": 0
+    },
+    "C_REPEAT": {
+      "page": 12,
+      "usage": 188,
+      "modifiers": 0
+    },
+    "C_SLOW_TRACKING": {
+      "page": 12,
+      "usage": 191,
+      "modifiers": 0
+    },
+    "C_SLOW2": {
+      "page": 12,
+      "usage": 191,
+      "modifiers": 0
+    },
+    "C_STOP_EJECT": {
+      "page": 12,
+      "usage": 204,
+      "modifiers": 0
+    },
+    "C_PLAY_PAUSE": {
+      "page": 12,
+      "usage": 205,
+      "modifiers": 0
+    },
+    "C_PP": {
+      "page": 12,
+      "usage": 205,
+      "modifiers": 0
+    },
+    "M_PLAY": {
+      "page": 12,
+      "usage": 205,
+      "modifiers": 0
+    },
+    "C_VOICE_COMMAND": {
+      "page": 12,
+      "usage": 207,
+      "modifiers": 0
+    },
+    "C_MUTE": {
+      "page": 12,
+      "usage": 226,
+      "modifiers": 0
+    },
+    "M_MUTE": {
+      "page": 12,
+      "usage": 226,
+      "modifiers": 0
+    },
+    "C_BASS_BOOST": {
+      "page": 12,
+      "usage": 229,
+      "modifiers": 0
+    },
+    "C_VOLUME_UP": {
+      "page": 12,
+      "usage": 233,
+      "modifiers": 0
+    },
+    "C_VOL_UP": {
+      "page": 12,
+      "usage": 233,
+      "modifiers": 0
+    },
+    "M_VOLU": {
+      "page": 12,
+      "usage": 233,
+      "modifiers": 0
+    },
+    "C_VOLUME_DOWN": {
+      "page": 12,
+      "usage": 234,
+      "modifiers": 0
+    },
+    "C_VOL_DN": {
+      "page": 12,
+      "usage": 234,
+      "modifiers": 0
+    },
+    "M_VOLD": {
+      "page": 12,
+      "usage": 234,
+      "modifiers": 0
+    },
+    "C_SLOW": {
+      "page": 12,
+      "usage": 245,
+      "modifiers": 0
+    },
+    "C_ALTERNATE_AUDIO_INCREMENT": {
+      "page": 12,
+      "usage": 371,
+      "modifiers": 0
+    },
+    "C_ALT_AUDIO_INC": {
+      "page": 12,
+      "usage": 371,
+      "modifiers": 0
+    },
+    "C_AL_CCC": {
+      "page": 12,
+      "usage": 387,
+      "modifiers": 0
+    },
+    "C_AL_WORD": {
+      "page": 12,
+      "usage": 388,
+      "modifiers": 0
+    },
+    "C_AL_TEXT_EDITOR": {
+      "page": 12,
+      "usage": 389,
+      "modifiers": 0
+    },
+    "C_AL_SPREADSHEET": {
+      "page": 12,
+      "usage": 390,
+      "modifiers": 0
+    },
+    "C_AL_SHEET": {
+      "page": 12,
+      "usage": 390,
+      "modifiers": 0
+    },
+    "C_AL_GRAPHICS_EDITOR": {
+      "page": 12,
+      "usage": 391,
+      "modifiers": 0
+    },
+    "C_AL_PRESENTATION": {
+      "page": 12,
+      "usage": 392,
+      "modifiers": 0
+    },
+    "C_AL_DATABASE": {
+      "page": 12,
+      "usage": 393,
+      "modifiers": 0
+    },
+    "C_AL_DB": {
+      "page": 12,
+      "usage": 393,
+      "modifiers": 0
+    },
+    "C_AL_EMAIL": {
+      "page": 12,
+      "usage": 394,
+      "modifiers": 0
+    },
+    "C_AL_MAIL": {
+      "page": 12,
+      "usage": 394,
+      "modifiers": 0
+    },
+    "C_AL_NEWS": {
+      "page": 12,
+      "usage": 395,
+      "modifiers": 0
+    },
+    "C_AL_VOICEMAIL": {
+      "page": 12,
+      "usage": 396,
+      "modifiers": 0
+    },
+    "C_AL_CONTACTS": {
+      "page": 12,
+      "usage": 397,
+      "modifiers": 0
+    },
+    "C_AL_ADDRESS_BOOK": {
+      "page": 12,
+      "usage": 397,
+      "modifiers": 0
+    },
+    "C_AL_CALENDAR": {
+      "page": 12,
+      "usage": 398,
+      "modifiers": 0
+    },
+    "C_AL_CAL": {
+      "page": 12,
+      "usage": 398,
+      "modifiers": 0
+    },
+    "C_AL_TASK_MANAGER": {
+      "page": 12,
+      "usage": 399,
+      "modifiers": 0
+    },
+    "C_AL_JOURNAL": {
+      "page": 12,
+      "usage": 400,
+      "modifiers": 0
+    },
+    "C_AL_FINANCE": {
+      "page": 12,
+      "usage": 401,
+      "modifiers": 0
+    },
+    "C_AL_CALCULATOR": {
+      "page": 12,
+      "usage": 402,
+      "modifiers": 0
+    },
+    "C_AL_CALC": {
+      "page": 12,
+      "usage": 402,
+      "modifiers": 0
+    },
+    "C_AL_AV_CAPTURE_PLAYBACK": {
+      "page": 12,
+      "usage": 403,
+      "modifiers": 0
+    },
+    "C_AL_MY_COMPUTER": {
+      "page": 12,
+      "usage": 404,
+      "modifiers": 0
+    },
+    "C_AL_WWW": {
+      "page": 12,
+      "usage": 406,
+      "modifiers": 0
+    },
+    "C_AL_NETWORK_CHAT": {
+      "page": 12,
+      "usage": 409,
+      "modifiers": 0
+    },
+    "C_AL_CHAT": {
+      "page": 12,
+      "usage": 409,
+      "modifiers": 0
+    },
+    "C_AL_LOGOFF": {
+      "page": 12,
+      "usage": 412,
+      "modifiers": 0
+    },
+    "C_AL_LOCK": {
+      "page": 12,
+      "usage": 414,
+      "modifiers": 0
+    },
+    "C_AL_SCREENSAVER": {
+      "page": 12,
+      "usage": 414,
+      "modifiers": 0
+    },
+    "C_AL_COFFEE": {
+      "page": 12,
+      "usage": 414,
+      "modifiers": 0
+    },
+    "C_AL_CONTROL_PANEL": {
+      "page": 12,
+      "usage": 415,
+      "modifiers": 0
+    },
+    "C_AL_SELECT_TASK": {
+      "page": 12,
+      "usage": 418,
+      "modifiers": 0
+    },
+    "C_AL_NEXT_TASK": {
+      "page": 12,
+      "usage": 419,
+      "modifiers": 0
+    },
+    "C_AL_PREVIOUS_TASK": {
+      "page": 12,
+      "usage": 420,
+      "modifiers": 0
+    },
+    "C_AL_PREV_TASK": {
+      "page": 12,
+      "usage": 420,
+      "modifiers": 0
+    },
+    "C_AL_HELP": {
+      "page": 12,
+      "usage": 422,
+      "modifiers": 0
+    },
+    "C_AL_DOCUMENTS": {
+      "page": 12,
+      "usage": 423,
+      "modifiers": 0
+    },
+    "C_AL_DOCS": {
+      "page": 12,
+      "usage": 423,
+      "modifiers": 0
+    },
+    "C_AL_SPELLCHECK": {
+      "page": 12,
+      "usage": 427,
+      "modifiers": 0
+    },
+    "C_AL_SPELL": {
+      "page": 12,
+      "usage": 427,
+      "modifiers": 0
+    },
+    "C_AL_KEYBOARD_LAYOUT": {
+      "page": 12,
+      "usage": 430,
+      "modifiers": 0
+    },
+    "C_AL_SCREEN_SAVER": {
+      "page": 12,
+      "usage": 433,
+      "modifiers": 0
+    },
+    "C_AL_FILE_BROWSER": {
+      "page": 12,
+      "usage": 436,
+      "modifiers": 0
+    },
+    "C_AL_FILES": {
+      "page": 12,
+      "usage": 436,
+      "modifiers": 0
+    },
+    "C_AL_IMAGE_BROWSER": {
+      "page": 12,
+      "usage": 438,
+      "modifiers": 0
+    },
+    "C_AL_IMAGES": {
+      "page": 12,
+      "usage": 438,
+      "modifiers": 0
+    },
+    "C_AL_AUDIO_BROWSER": {
+      "page": 12,
+      "usage": 439,
+      "modifiers": 0
+    },
+    "C_AL_AUDIO": {
+      "page": 12,
+      "usage": 439,
+      "modifiers": 0
+    },
+    "C_AL_MUSIC": {
+      "page": 12,
+      "usage": 439,
+      "modifiers": 0
+    },
+    "C_AL_MOVIE_BROWSER": {
+      "page": 12,
+      "usage": 440,
+      "modifiers": 0
+    },
+    "C_AL_MOVIES": {
+      "page": 12,
+      "usage": 440,
+      "modifiers": 0
+    },
+    "C_AL_INSTANT_MESSAGING": {
+      "page": 12,
+      "usage": 444,
+      "modifiers": 0
+    },
+    "C_AL_IM": {
+      "page": 12,
+      "usage": 444,
+      "modifiers": 0
+    },
+    "C_AL_OEM_FEATURES": {
+      "page": 12,
+      "usage": 445,
+      "modifiers": 0
+    },
+    "C_AL_TIPS": {
+      "page": 12,
+      "usage": 445,
+      "modifiers": 0
+    },
+    "C_AL_TUTORIAL": {
+      "page": 12,
+      "usage": 445,
+      "modifiers": 0
+    },
+    "C_AC_NEW": {
+      "page": 12,
+      "usage": 513,
+      "modifiers": 0
+    },
+    "C_AC_OPEN": {
+      "page": 12,
+      "usage": 514,
+      "modifiers": 0
+    },
+    "C_AC_CLOSE": {
+      "page": 12,
+      "usage": 515,
+      "modifiers": 0
+    },
+    "C_AC_EXIT": {
+      "page": 12,
+      "usage": 516,
+      "modifiers": 0
+    },
+    "C_AC_SAVE": {
+      "page": 12,
+      "usage": 519,
+      "modifiers": 0
+    },
+    "C_AC_PRINT": {
+      "page": 12,
+      "usage": 520,
+      "modifiers": 0
+    },
+    "C_AC_PROPERTIES": {
+      "page": 12,
+      "usage": 521,
+      "modifiers": 0
+    },
+    "C_AC_PROPS": {
+      "page": 12,
+      "usage": 521,
+      "modifiers": 0
+    },
+    "C_AC_UNDO": {
+      "page": 12,
+      "usage": 538,
+      "modifiers": 0
+    },
+    "C_AC_COPY": {
+      "page": 12,
+      "usage": 539,
+      "modifiers": 0
+    },
+    "C_AC_CUT": {
+      "page": 12,
+      "usage": 540,
+      "modifiers": 0
+    },
+    "C_AC_PASTE": {
+      "page": 12,
+      "usage": 541,
+      "modifiers": 0
+    },
+    "C_AC_FIND": {
+      "page": 12,
+      "usage": 543,
+      "modifiers": 0
+    },
+    "C_AC_SEARCH": {
+      "page": 12,
+      "usage": 545,
+      "modifiers": 0
+    },
+    "C_AC_GOTO": {
+      "page": 12,
+      "usage": 546,
+      "modifiers": 0
+    },
+    "C_AC_HOME": {
+      "page": 12,
+      "usage": 547,
+      "modifiers": 0
+    },
+    "C_AC_BACK": {
+      "page": 12,
+      "usage": 548,
+      "modifiers": 0
+    },
+    "C_AC_FORWARD": {
+      "page": 12,
+      "usage": 549,
+      "modifiers": 0
+    },
+    "C_AC_STOP": {
+      "page": 12,
+      "usage": 550,
+      "modifiers": 0
+    },
+    "C_AC_REFRESH": {
+      "page": 12,
+      "usage": 551,
+      "modifiers": 0
+    },
+    "C_AC_BOOKMARKS": {
+      "page": 12,
+      "usage": 554,
+      "modifiers": 0
+    },
+    "C_AC_FAVORITES": {
+      "page": 12,
+      "usage": 554,
+      "modifiers": 0
+    },
+    "C_AC_FAVOURITES": {
+      "page": 12,
+      "usage": 554,
+      "modifiers": 0
+    },
+    "C_AC_ZOOM_IN": {
+      "page": 12,
+      "usage": 557,
+      "modifiers": 0
+    },
+    "C_AC_ZOOM_OUT": {
+      "page": 12,
+      "usage": 558,
+      "modifiers": 0
+    },
+    "C_AC_ZOOM": {
+      "page": 12,
+      "usage": 559,
+      "modifiers": 0
+    },
+    "C_AC_VIEW_TOGGLE": {
+      "page": 12,
+      "usage": 562,
+      "modifiers": 0
+    },
+    "C_AC_SCROLL_UP": {
+      "page": 12,
+      "usage": 563,
+      "modifiers": 0
+    },
+    "C_AC_SCROLL_DOWN": {
+      "page": 12,
+      "usage": 564,
+      "modifiers": 0
+    },
+    "C_AC_EDIT": {
+      "page": 12,
+      "usage": 573,
+      "modifiers": 0
+    },
+    "C_AC_CANCEL": {
+      "page": 12,
+      "usage": 607,
+      "modifiers": 0
+    },
+    "C_AC_INSERT": {
+      "page": 12,
+      "usage": 617,
+      "modifiers": 0
+    },
+    "C_AC_INS": {
+      "page": 12,
+      "usage": 617,
+      "modifiers": 0
+    },
+    "C_AC_DEL": {
+      "page": 12,
+      "usage": 618,
+      "modifiers": 0
+    },
+    "C_AC_REDO": {
+      "page": 12,
+      "usage": 633,
+      "modifiers": 0
+    },
+    "C_AC_REPLY": {
+      "page": 12,
+      "usage": 649,
+      "modifiers": 0
+    },
+    "C_AC_FORWARD_MAIL": {
+      "page": 12,
+      "usage": 651,
+      "modifiers": 0
+    },
+    "C_AC_SEND": {
+      "page": 12,
+      "usage": 652,
+      "modifiers": 0
+    },
+    "C_AC_DESKTOP_SHOW_ALL_WINDOWS": {
+      "page": 12,
+      "usage": 671,
+      "modifiers": 0
+    },
+    "C_AC_DESKTOP_SHOW_ALL_APPLICATIONS": {
+      "page": 12,
+      "usage": 674,
+      "modifiers": 0
+    },
+    "C_KEYBOARD_INPUT_ASSIST_PREVIOUS": {
+      "page": 12,
+      "usage": 711,
+      "modifiers": 0
+    },
+    "C_KBIA_PREV": {
+      "page": 12,
+      "usage": 711,
+      "modifiers": 0
+    },
+    "C_KEYBOARD_INPUT_ASSIST_NEXT": {
+      "page": 12,
+      "usage": 712,
+      "modifiers": 0
+    },
+    "C_KBIA_NEXT": {
+      "page": 12,
+      "usage": 712,
+      "modifiers": 0
+    },
+    "C_KEYBOARD_INPUT_ASSIST_PREVIOUS_GROUP": {
+      "page": 12,
+      "usage": 713,
+      "modifiers": 0
+    },
+    "C_KBIA_PREV_GRP": {
+      "page": 12,
+      "usage": 713,
+      "modifiers": 0
+    },
+    "C_KEYBOARD_INPUT_ASSIST_NEXT_GROUP": {
+      "page": 12,
+      "usage": 714,
+      "modifiers": 0
+    },
+    "C_KBIA_NEXT_GRP": {
+      "page": 12,
+      "usage": 714,
+      "modifiers": 0
+    },
+    "C_KEYBOARD_INPUT_ASSIST_ACCEPT": {
+      "page": 12,
+      "usage": 715,
+      "modifiers": 0
+    },
+    "C_KBIA_ACCEPT": {
+      "page": 12,
+      "usage": 715,
+      "modifiers": 0
+    },
+    "C_KEYBOARD_INPUT_ASSIST_CANCEL": {
+      "page": 12,
+      "usage": 716,
+      "modifiers": 0
+    },
+    "C_KBIA_CANCEL": {
+      "page": 12,
+      "usage": 716,
+      "modifiers": 0
+    },
+    "C_AC_NEXT_KEYBOARD_LAYOUT_SELECT": {
+      "page": 12,
+      "usage": 669,
+      "modifiers": 0
+    },
+    "GLOBE": {
+      "page": 12,
+      "usage": 669,
+      "modifiers": 0
+    }
+  }
+}

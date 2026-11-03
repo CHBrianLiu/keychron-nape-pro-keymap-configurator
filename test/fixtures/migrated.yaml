@@ -1,0 +1,58 @@
+# Fixed migration fixture; independent of the user's editable keymap.yaml.
+version: 1
+device: nape-pro
+layers:
+  - buttons:
+      "01": { nape: scroll_mode }
+      "02": LCLK
+      "03": { tap: LG(C), hold: LG(V) }
+      "04": { nape: gesture_mode }
+      m1: { tap: MB4, hold: { mo: 1 } }
+      m2: RCLK
+    encoder: { clockwise: LG(KP_PLUS), counterclockwise: LG(KP_MINUS) }
+  - buttons:
+      "01": MB4
+      "02": { nape: dpi_cycle }
+      "03": { nape: scroll_mode }
+      "04": { to: 2 }
+      m1: { mo: 1 }
+      m2: RCLK
+    encoder: { clockwise: C_VOLUME_UP, counterclockwise: C_VOLUME_DOWN }
+  - buttons:
+      "01": L
+      "02": LCLK
+      "03": R
+      "04": LG(LS(N2))
+      m1: { to: 0 }
+      m2: LEFT_SHIFT
+    encoder: { clockwise: LG(KP_PLUS), counterclockwise: LG(KP_MINUS) }
+  - buttons:
+      "01": LCLK
+      "02": RCLK
+      "03": { tap: LG(LS(N2)), hold: LEFT_GUI }
+      "04": { tap: MB5, hold: LEFT_SHIFT }
+      m1: { nape: scroll_mode }
+      m2: { tap: MB4, hold: LEFT_GUI }
+    encoder: { clockwise: C_VOLUME_UP, counterclockwise: C_VOLUME_DOWN }
+  - buttons:
+      "01": RCLK
+      "02": LCLK
+      "03": LG(W)
+      "04": LC(K)
+      m1: { nape: scroll_mode }
+      m2: MB4
+    encoder: { clockwise: C_VOLUME_UP, counterclockwise: C_VOLUME_DOWN }
+  - buttons: { "01": MB4, "02": { nape: dpi_cycle }, "03": { nape: scroll_mode }, "04": { nape: orientation_cycle }, m1: LCLK, m2: RCLK }
+    encoder: { clockwise: C_VOLUME_UP, counterclockwise: C_VOLUME_DOWN }
+  - buttons: { "01": MB4, "02": { nape: dpi_cycle }, "03": { nape: scroll_mode }, "04": { nape: orientation_cycle }, m1: LCLK, m2: RCLK }
+    encoder: { clockwise: C_VOLUME_UP, counterclockwise: C_VOLUME_DOWN }
+  - buttons: { "01": MB4, "02": { nape: dpi_cycle }, "03": { nape: scroll_mode }, "04": { nape: orientation_cycle }, m1: LCLK, m2: RCLK }
+    encoder: { clockwise: C_VOLUME_UP, counterclockwise: C_VOLUME_DOWN }
+preserved:
+  raw_layer_0:
+    keymap: [21034, 0, 212, 0, 209, 210, 21035]
+    encoder: { clockwise: 169, counterclockwise: 170 }
+    tap_hold: []
+  column_6: [21035, 21035, 21035, 21035, 21035, 21035, 21035, 21035]
+  combinations: []
+  combination_names: {}
