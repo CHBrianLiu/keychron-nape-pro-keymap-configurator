@@ -5,6 +5,20 @@ device: nape-pro
 
 layers:
   # Visible layer 0 (raw layer 1)
+  # layer change gateway
+  # Angle: 90
+  - buttons:
+      "01": { to: 1 }
+      "02": { to: 2 }
+      "03": { to: 3 }
+      "04": { to: 4 }
+      m1: none
+      m2: none
+    encoder:
+      clockwise: none
+      counterclockwise: none
+
+  # Visible layer 1 (raw layer 2)
   # horizontal placement beneath the keyboard
   # Angle: 90
   - buttons:
@@ -25,18 +39,6 @@ layers:
     encoder:
       clockwise: { nape: wheel_down }
       counterclockwise: { nape: wheel_up }
-
-  # Visible layer 1 (raw layer 2)
-  - buttons:
-      "01": MB4
-      "02": { nape: dpi_cycle }
-      "03": { nape: scroll_mode }
-      "04": { to: 2 }
-      m1: { mo: 1 }
-      m2: RCLK
-    encoder:
-      clockwise: C_VOLUME_UP
-      counterclockwise: C_VOLUME_DOWN
 
   # Visible layer 2 (raw layer 3)
   - buttons:
@@ -69,6 +71,8 @@ layers:
       counterclockwise: C_VOLUME_DOWN
 
   # Visible layer 4 (raw layer 5)
+  # Right-haned with thumb control
+  # Angle: 225
   - buttons:
       "01": RCLK
       "02": LCLK
