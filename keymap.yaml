@@ -12,7 +12,7 @@ layers:
       "02": { to: 2 }
       "03": { to: 3 }
       "04": { to: 4 }
-      m1: none
+      m1: { to: 5 }
       m2: none
     encoder:
       clockwise: none
@@ -85,13 +85,14 @@ layers:
       counterclockwise: C_VOLUME_DOWN
 
   # Visible layer 5 (raw layer 6)
+  # Media
   - buttons:
-      "01": MB4
-      "02": { nape: dpi_cycle }
-      "03": { nape: scroll_mode }
-      "04": { nape: orientation_cycle }
-      m1: LCLK
-      m2: RCLK
+      "01": C_PREV
+      "02": none
+      "03": C_NEXT
+      "04": none
+      m1: C_PLAY_PAUSE
+      m2: none
     encoder:
       clockwise: C_VOLUME_UP
       counterclockwise: C_VOLUME_DOWN
