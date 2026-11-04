@@ -23,13 +23,15 @@ layers:
   # Angle: 90
   - buttons:
       "01":
-        tap: none # Input-method switching is deferred.
+        # quick Tuna invoking
+        tap: LC(LA(LG(B)))
         hold: LEFT_GUI
       "02":
         tap: MB4
         hold: { nape: gesture_mode }
       "03":
-        tap: none # Input-method switching is deferred.
+        # quick Tuna invoking
+        tap: LC(LA(LG(LBKT)))
         hold: { mo: 2 }
       "04":
         tap: MB5
