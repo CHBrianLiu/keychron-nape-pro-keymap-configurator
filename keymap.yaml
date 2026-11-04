@@ -83,8 +83,8 @@ layers:
       m1: { nape: scroll_mode }
       m2: MB4
     encoder:
-      clockwise: C_VOLUME_UP
-      counterclockwise: C_VOLUME_DOWN
+      clockwise: { nape: wheel_down }
+      counterclockwise: { nape: wheel_up }
 
   # Visible layer 5 (raw layer 6)
   # Media
